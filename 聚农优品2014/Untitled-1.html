@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var hotimg = $(".twolist div a img");
+		$(".twolist div").css({"overflow":"hidden"});
+		hotimg.css({"position":"absolute"});
+		hotimg.hover(
+			function(){
+				$(this).animate({"left":"-10px"},"fast")
+			},
+			function(){
+				$(this).animate({"left":"0px"},"fast")
+			}
+		)
+	})
+</script>
+<style type="text/css">
+<!--
+body {min-width:1416px;font-size:12px; font-family:"微软雅黑" !important; }
+html, body, div, span, ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form, a, em, img { margin:0; padding:0; list-style:none; border:0 }
+i, em, var, h3, h2, h5 { font-style:normal; font-weight:normal; }
+a { text-decoration:none; outline:none; color:#4f3c2c; }
+a:focus { outline:none; -moz-outline:none; }
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; overflow:hidden; }
+textarea { resize:none; }
+
+.hotsell{width:876px;height:575px;margin:10px 11px 21px 12px;}
+.twolist{width:874px;height:249px;clear:both;border-right:1px solid #C2BDB7;border-left:1px solid #C2BDB7;border-bottom:1px solid #C2BDB7;}
+.twolist div{width:437px;height:247px;float:left;position:relative;}
+.twolist div.tl_left{border-top:2px solid #5F9406;}
+.twolist div.tl_right{border-top:2px solid #D31322;width:436px;border-left:1px solid #C5C1B8;}
+.twolist div.tl_icon{width:50px;height:60px;position:absolute;}
+.twolist div.green{background:url(../img/green.png) no-repeat 0 0;left: 20px;top: -4px;}
+.twolist div.red{background:url(../img/red.png) no-repeat 0 0;left: 20px;top: -4px;}
+.twolist div.list_lc_item{width:205px;height:278px;float:left;position:relative;margin:57px 0 0 0;border-top:1px solid #BFBEBA;border-bottom:1px solid #BFBEBA;}
+.twolist div.list_lc_left{border-left:1px solid #BFBEBA;width:204px;}
+.twolist div.list_lc_right{border-right:1px solid #BFBEBA;width:204px;}
+.twolist div.list_fix{width:204px;border-right:1px solid #BFBEBA;border-left:1px solid #BFBEBA;}
+.twolist div.list_lc_item .list_icon{width:67px;height:110px;position:absolute;top:-36px;left:133px;}
+.twolist div.list_right_item{width:241px;height:152px;border:1px solid #C5BEB4;margin: 14px 0 0 15px;}
+.twolist div.tw_info{position:absolute;width:126px;height:80px;line-height:19px;}
+.twolist div.tw_info_01{top:160px;left:17px;}
+.twolist div.tw_info_02{top:72px;left:285px;}
+.twolist div.tw_info_03{top:15px;left:11px;}
+.twolist div.tw_info_04{top:15px;left:11px;}
+.twolist div.tw_info_05{top:15px;left:11px;}
+.twolist div.tw_info_06{top:6px;left:96px;}
+.twolist div.tw_info_07{top:6px;left:96px;}
+.twolist div.tw_info a{font-size:13px;color:#898989;letter-spacing:3px;}
+.twolist div.tw_info a.tw_price{color:#27A300;}
+-->
+</style>
+</head>
+
+<body>
+<div class="hotsell">
+			<div class="twolist">
+				<div class="tl_left">
+					<a href="###"><img src="img/tl_left.jpg" width="437" height="247" /></a>
+					<div class="tl_icon green"></div>
+					<div class="tw_info tw_info_01">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+				<div class="tl_right"><a href="###"><img src="img/tl_right.jpg" width="436" height="247" /></a><div class="tl_icon red"></div>
+					<div class="tw_info tw_info_02">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+				<div class="list_lc_item list_lc_left"><a href="###"><img src="img/list_left01.jpg" width="204" height="278" /></a><div class="list_icon"><img src="img/list_icon01.png" width="67" height="110" /></div>
+					<div class="tw_info tw_info_03">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+				<div class="list_lc_item list_fix"><a href="###"><img src="img/list_left02.jpg" width="204" height="278" /></a><div class="list_icon"><img src="img/list_icon02.png" width="67" height="110" /></div>
+					<div class="tw_info tw_info_04">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+				<div class="list_lc_item list_lc_right"><a href="###"><img src="img/list_left03.jpg" width="204" height="278" /></a><div class="list_icon"><img src="img/list_icon03.png" width="67" height="110" /></div>
+					<div class="tw_info tw_info_05">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+				<div class="list_right_item"><a href="###"><img src="img/list_right_item01.jpg" width="241" height="152" /></a>
+					<div class="tw_info tw_info_06">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+				<div class="list_right_item"><a href="###"><img src="img/list_right_item01.jpg" width="241" height="152" /></a>
+					<div class="tw_info tw_info_07">
+						<a href="###">风趣纯果蔬饮料300ml*10瓶/箱</a>
+						<a href="###" class="tw_price">108元</a>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

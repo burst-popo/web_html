@@ -1,0 +1,84 @@
+/*初始化*/
+html, body, div, span,ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form ,a ,em ,img{ padding:0; margin:0; list-style:none;border:0 }
+body{font-size:12px;font-family:"微软雅黑" !important;}
+a{color: #323335;text-decoration: none;}
+a img{border:0px;}
+.clearfix_1{clear:both;}
+li{overflow:hidden;}
+/*初始化end*/
+body{width:100%;background:url(../images/bodybg_1.jpg) repeat-x;width:100%;}
+.header_1{background:url(../images/handBG01_1.jpg) repeat-x 0 0;height:208px;width:100%;clear:both;}
+.bander_1 {background: url(../images/handBG_1.jpg) no-repeat 0 0;height: 208px;width: 1000px;margin: 0 auto 0 auto;}
+.banderleft_1 {float: left;height: 32px;width: 561px;padding:85px 0 82px 0;overflow:hidden;}
+.banderright_1 {float: right;height: 39px;width: 287px;padding:169px 0 0 132px;}
+.banderleft_1 h5 {width: 560px  ; height: 40px  ;font-family: "Adobe 黑体 Std R";font-size: 32px;color: #FFF; overflow:hidden;}
+.banderright_1 a {height: 30px;width: 35px;background: url(../images/handseach_1.jpg) no-repeat;display: block;float: left;}
+.banderright_1 input {height: 30px;width: 240px;float: left;margin: 0px;padding: 0px;border: none;}
+.nav_1 {background: url(../images/handnavBG_1.jpg) repeat-x 0 0;height: 48px;}
+.nav_1 ul {height: 48px;width: 1000px;margin:0 auto 0 auto;clear: both;list-style: none;}
+.nav_1 ul li {float: left;width: 200px;text-align: center;}
+a.navlink_1 {font-size: 18px;color: #FFF;text-decoration: none;display:block;width:200px;height:48px;line-height:48px;}
+a.navlink_1:hover {width:200px;height:48px;background: url(../images/navbg_1.jpg) no-repeat 0 0;display: block;}
+.mainpicfix_1 {float: left;height: 67px;width: 7px;}
+.mainfooterinfo_1 {height: 196px;width: 521px;padding:6px 12px 0 10px;}
+.mainfooterinfoimage_1 {background: url(../images/mainfooterinfoimage_1.jpg) no-repeat;width: 161px;height: 196px;float: left;}
+.mainfooterinfotext_1 {float: left;height: 196px;width: 205px;line-height: 27px;color: #333333;padding:0 0 0 24px; overflow:hidden;}
+.mainfooterinfoicon_1 {float: left;height: 196px;width: 131px;background: url(../images/mainfooterinfoicon_1.jpg) no-repeat;}
+.mainpic_1 {height: 290px;width: 1000px;margin:0 auto 0 auto;background: url(../images/handheadpic_1.jpg) no-repeat;}
+.main_1 {height: auto;width: 1000px;margin:0 auto 28px auto;clear: both;}
+.mainleftul_1 {height: 108px;width: 210px;list-style: none;}
+.mainleft_1 {float: left;width: 543px;height: auto;}
+.mainright_1 {width: 418px;margin-left: 39px;float: right;height: auto;overflow:hidden;}
+.maintop_1 {height: 242px;}
+.maincenter_1 {height: 241px;}
+.mainrightfooter_1 {height: 678px;width: 418px;margin: 6px 0 0 0;overflow:hidden;}
+.mainrightfootertop_1 ul {height: 469px;width: 418px;clear:both;list-style: none;}
+.mainrightfootertop_1 ul li {float: left;}
+.mainrightfooterlifirstlineleft_1 {height: 164px;width: 232px;}
+.mainrightfooterlifirstlineright_1 {height: 164px;width: 186px;color: #FFF;background: #DD745F;}
+.mainrightfooterlisecondlineleft_1 {height: 152px;width: 232px;color: #000;background: #4CA7A8;}
+.mainrightfooterlisecondlineright_1 {height: 152px;width: 186px;}
+.mainrightfooterlithirdlineleft_1 {height: 153px;width: 232px;}
+.mainrightfooterlithirdlineright_1 {height: 153px;width: 186px;}
+.mainrightfootercenter_1 ul {height: 35px;list-style: none;clear: both;width: 369px;margin:0px 28px 14px 29px;overflow:hidden;}
+.mainfooter_1 {height: 241px;}
+.mainleftheader_1 {height: 37px;border-bottom:2px solid #2B9800;color: #5B595A;clear: both;}
+.maingreentext_1 {color: #2B9902;float: left;margin: 19px 0 0 0;font-size: 13px;}
+.mainblacktext_1 {color: #838381;float: right;font-size: 13px;margin: 19px 0 0 0;}
+.maincenterinfo_1 {height: 108px;padding:6px 39px 0 11px; clear: both;width:493px; overflow:hidden;}
+.maintopinfo_1 {height: 196px;margin-top: 6px;}
+.maintopinfoleft_1 {background: url(../images/handinfo01_1.jpg) no-repeat;float: left;height: 196px;width: 139px;}
+.maintopinforight_1 {float: left;height: 188px;width: 393px;margin:0 0 8px 11px;overflow: hidden;text-indent: 2em;}
+.maintopinforight_1 a {color: #343432;text-decoration: none;}
+.mainleftheader_1 h5 {float: left;font-size: 13px;margin: 19px 0 0 0;}
+.maincenterinfo_1 ul {height: 108px;width: 210px;float: left;overflow:hidden;list-style: none;}
+.mainulfix_1 {width: 73px;height: 108px;float: left;}
+.mainleftulicon02_1 {width:210px; height:18px;color: #323433;padding: 0 0 0 0px; overflow:hidden; line-height:21px; _line-height:18px;}
+.maincenterpic_1 {height: 67px;width: 543px;}
+.maincenterpic_1 ul {clear: both;height: 67px;width: 543px;list-style: none;overflow:hidden;}
+.maincenterpicli_1{height: 67px;width: 103px;float: left;		}
+.maincenterpic_1 {height: 67px;width: 543px;clear:both;padding:21px 0 0 0;}
+.mainleftulicon_1 {color: #323433;padding:0 0 0 0px;}
+.mainrightheader_1 {height: 37px;border-bottom:2px solid #2B9800;color: #5B595A;clear: both;}
+.mainrightheader_1 h5 {float: left;font-size: 13px;margin: 19px 0 0 0;}
+.mainrightfootertop_1{height:469px;overflow:hidden;}
+.mainrightfootercenter_1{height:49px;padding:15px 0 0 0;color: #FFF;background: #E884A0;}
+.mainrightfooterfooter_1{height:145px;}
+.mainrightfootercenterliname_1 {height: 18px;width:87px;color:#FFF;line-height:21px;margin: 0 50px 0 0;}
+.mainrightfootercenter_1 ul li {float: left;line-height:18px;}
+.mainfooterinfotext_1 h5 {margin:34px 0 27px 0;font-size: 14px; overflow:hidden;}
+.mainrightfooterlifirstlinetitle_1 {margin:29px 0 0 16px;font-weight: bold;font-size: 14px;}
+.mainrightfooterlifirstlinetext_1 {height: 55px;width: 154px;margin:29px 16px 0 16px;}
+.mainrightfooterlisecondlinetitle_1 {margin:29px 0 0 16px;font-weight: bold;font-size: 14px;}
+.mainrightfooterlisecondlinetext_1 {height: 55px;width: 154px;margin:29px 16px 0 16px;}
+.mainrightfootercenterlinameright_1 {margin-right: 28px;}
+.mainlefttopicon_1 {background: url(../images/handulBG01_1.jpg) no-repeat;float:left;width:4px; height:11px; margin:4px 6px 6px 0;_margin:1px 0 0 0;}
+.mainleftlisticon_1 {background: url(../images/handulBG02_1.jpg) no-repeat;float:left;width:2px;height:2px;margin:8px 6px 8px 0;}
+.footer_1 {height: 140px;width: 100%;background-color: #EBEEF3;overflow:hidden;}
+.footerlink_1 {height: 140px;width: 1000px;margin: 0 auto 0 auto;background: #EBEEF3;padding: 18px 0 0 0;*padding:14px 0 0 0;}
+.footerlinklist_1 {height: 12px;*height:15px;width: 630px;clear: both;margin:0 auto 0 auto;}
+.footerlinklist_1 span {float: left;height: 12px;width: 90px;border-right:1px solid #999;text-align: center;}
+.footerlinklist_1 .footerlinklistright_1 {border:none;color: #666;line-height: 12px;float: left;}
+.footerlinklist_1 .footerlinklistleft_1 {height: 12px;width: 45px;}
+.footerlinklisttext_1 {line-height: 14px;color: #666;text-align: center;height: 14px;width: 215px;margin:13px auto 0 auto;letter-spacing: 4px;}
+.footerlinklist_1 span a {line-height: 12px;color: #666;text-decoration: none;}

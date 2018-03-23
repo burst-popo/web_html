@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+/*初始化*/
+body {font-size:12px;font-family:"微软雅黑" !important;}
+html, body, div, span,ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form ,a ,em ,img{  margin:0;padding:0; list-style:none;border:0 }
+i, em, var,h3,h2,h5{ font-style:normal; font-weight:normal; }
+a { text-decoration:none;outline:none;}
+a:focus {outline:none;-moz-outline:none;}
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; height:0; overflow:hidden;}
+textarea{resize:none;}
+/*初始化end*/
+.main{width:1002px;height:auto;margin:0 auto 0 auto;clear:both;}
+.mleft{width: 231px  ; height:auto; float:left; margin:0 10px 0 0; clear:both;}
+.company{ width:228px;height:212px; border:solid 1px #ccc;margin:0 0 7px 0;}
+.company h5{width:  218px ; height:  30px  ;border-bottom:solid 1px #ccc;font-size:14px; line-height:30px; font-weight:bold; padding:0 0 0 10px;background:#F4F3EF;}
+.company span{width:208px;height:37px;display: block;border-bottom:dotted 1px #ccc;margin:0 10px 0 10px; line-height:37px; color:#015EA4;font-size:12px;}
+.company ul{ width:208px;height:128px; list-style:none;margin:0 10px 0 10px; padding:7px 0 0 0;}
+.company ul li{width:208px;height:12px;margin:0 0 12px 0;*margin:0 0 6px 0;}
+.hotprovide{width:231px;height:258px;margin:0 0 10px 0; }
+.hotprovide p{width:224px;height:18px;background:url(../images/headicon.gif) no-repeat;padding:0 0 0 7px;color:#010101;border-bottom:solid 1px #EAEAEA; font-weight:bold; font-size:12px;}
+.hotprovide ul{width:212px;height:234px;list-style:none;padding:5px 19px 0 0; overflow:hidden;}
+.hotprovide ul li{width:205px;height:24px; background:url(../images/info_liicon.jpg) no-repeat 2px 6px;padding:0 0 0 7px;*height:20px;}
+.hotprovide ul li h6{font-size:12px;float:left; font-weight:normal;}
+.hotprovide ul li h5{font-size:12px;float:right;color:#999999;}
+.hotprovide a{ text-decoration:none; color:#4C4C4C;}
+.ad{width:231px;height:181px;margin:0 0 11px 0;}
+.adsecond{width: 231px  ; height: 151px   ;margin:7px 0 0 0; }
+.mright{width:761px;height:auto; float:left;}
+.mrtop{width:733px;height:402px;clear:both;border:solid 1px #ccc;padding:0 13px 0 13px;}
+.productlist{width:341px;height:380px;float:left;margin:11px 21px 0 0;}
+.plpic{width:341px;height:290px;}
+.productlist ul{width:341px ;height:80px;clear:both;list-style:none;margin:10px 0 0 0;}
+.productlist ul li{width:80px;height:80px;float:left;border:solid 1px #ccc;margin:0 4px 0 0;}
+.productlist ul li.piclistfix{margin:0 0 0 0;}
+.productinfo{ width:370px;height:380px; float:left;margin:11px 0 0 0;}
+.productinfo h5{width: 369px  ; height:  43px   ;font-size:18px;border-bottom:dotted 1px #ccc;}
+.productinfo ul{width:  360px  ; height: 181px    ; list-style:none;padding:10px 0 65px 0;*padding:10px 0 68px 0; overflow:hidden;}
+.productinfo ul li{width: 370px   ; height:  13px   ;margin:0 0 22px 0;}
+.button{width: 351px   ; height: 56px   ; border:solid 1px #ccc;padding:22px 0 0 7px;}
+.mrcenter{width:760px;height:533px;margin:12px 0 0 0;}
+.chead{width:760px;height:30px;clear:both; border-bottom:solid 1px #29B4F7;}
+.chead a{display:block;width:100px;height:29px;float:left;background:#F8F8F8;font-size:12px;text-align:center;line-height:30px;color:#666666;border:solid 1px #ccc;margin:0 1px 0 0;}
+.mrcenter h5{width: 756px   ; height:  46px  ;font-size:14px; text-align:left; line-height:46px;padding:0 0 0 4px;}
+.imgbox{width:600px;height:456px;padding:0 75px 0 85px;}
+.mrfoot{width:759px;height:132px; border:solid 1px #ccc;margin:17px 0 0 0;}
+.mrfoot h5{width:749px;height:32px;background:#D1D1D1;color:#FFF;text-align:left;line-height:32px;padding:0 0 0 10px;}
+.morelink{width: 1002px  ; height:  135px ;border-bottom:solid 1px #ccc; margin:10px auto 0 auto;clear:both;}

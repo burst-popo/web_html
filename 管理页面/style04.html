@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style04/style04.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var bar = $(".left_nav ul li");
+		var content = $(".content_wrapper .info");
+		var num ;
+		content.eq(0).show();
+		bar.eq(0).css({"background":"#FEFEFE","border-right":"none"});
+		bar.click(function(){
+			$(this).css({"background":"#FEFEFE","border-right":"none"}).siblings().css({"background":"#E1E1E1","border-right":"1px solid #CCCCCC"});
+			num = $(this).index();
+			content.eq(num).show().siblings().hide();
+			
+		  })
+		
+		$(".search #search").focus(function(){
+			$(this).val("");
+		});
+		$(".search #search").blur(function(){
+			$(this).val("请输入您的内容");
+		});
+	})
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="head">
+		<div class="logo"><img src="img/style04/logo.jpg" width="195" height="51" /></div>
+		<div class="tool_bar">
+			<ul>
+				<li><img src="img/style04/tb001.jpg" width="34" height="51" /></li>
+				<li class="tb_text"><a href="###">我的桌面</a></li>
+				<li><img src="img/style04/tb002.jpg" width="34" height="51" /></li>
+				<li class="tb_text"><a href="###">修改密码</a></li>
+				<li><img src="img/style04/tb003.jpg" width="34" height="51" /></li>
+				<li class="tb_text"><a href="###">个人资料</a></li>
+				<li><img src="img/style04/tb004.jpg" width="34" height="51" /></li>
+				<li class="tb_text"><a href="###">桌面设置</a></li>
+				<li><img src="img/style04/tb005.jpg" width="34" height="51" /></li>
+				<li class="tb_text"><a href="###">退出系统</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="left_nav">
+			<div class="wel">
+				<span><img src="img/style04/touxiang.jpg" width="56" height="56" /></span>
+				<span class="wel_text">管理员，你好！</span>
+			</div>
+			<div class="weather">
+				<span>北京</span>
+				<span class="wea_icon"><img src="img/style04/weacher.jpg" width="18" height="17" /></span>
+				<span>30&deg;C~15&deg;C</span>
+				<span>北风</span>
+			</div>
+			<ul>
+				<li>
+					<span><img src="img/style04/left_nav01.png" width="54" height="100" /></span>
+					<span class="ln_text">业务中心</span>
+				</li>
+				<li>
+					<span><img src="img/style04/left_nav01.png" width="54" height="100" /></span>
+					<span class="ln_text">知识中心</span>
+				</li>
+				<li>
+					<span><img src="img/style04/left_nav01.png" width="54" height="100" /></span>
+					<span class="ln_text">基础数据</span>
+				</li>
+				<li>
+					<span><img src="img/style04/left_nav01.png" width="54" height="100" /></span>
+					<span class="ln_text">在线办公</span>
+				</li>
+				<li>
+					<span><img src="img/style04/left_nav01.png" width="54" height="100" /></span>
+					<span class="ln_text">管理中心</span>
+				</li>
+				<li>
+					<span><img src="img/style04/left_nav01.png" width="54" height="100" /></span>
+					<span class="ln_text">开发中心</span>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content_wrapper">
+				<div class="info">
+					<div class="cont_head">
+						<div class="mark">
+							<span><a href="###"><img src="img/style04/mark.jpg" width="46" height="43" /></a></span>
+							<span class="mark_fix"><a href="###">业务中心</a></span>
+						</div>
+						<div class="search">
+							<form action="" method="post">
+								<input name="" id="search" type="text" value="请输入您的内容" />
+								<input name="" type="button" value="查询" />
+							
+							</form>
+						</div>
+					</div>
+					<div class="search_bar">
+						<div class="sb_head">
+							<span><img src="img/style04/sb_head.jpg" width="47" height="39" /></span>
+							<span class="sb_fix">全文检索</span>
+						</div>
+						<div class="quanwen">
+							<div class="quanwen_icon">
+								<form action="" method="post">
+									名称：<input name="" type="text" />
+									内容：<input name="" type="text" />
+									关键词：<input name="" type="text" />
+									知识分类：<input name="" type="text" />
+								</form>
+							</div>
+							<span class="quanwen_btn"><a href="###">搜索</a></span>
+						</div>
+					</div>
+					<div class="cont_list">
+						<div class="cont_list_head">
+							<span><img src="img/style04/cont_list_head.jpg" width="47" height="39" /></span>
+							<span class="cl_head_fix">知识列表</span>
+							<div class="list_icon">
+								<ul>
+									<li><a href="###">预览</a></li>
+									<li><a href="###">添加</a></li>
+									<li><a href="###">修改</a></li>
+									<li><a href="###">删除</a></li>
+									<li><a href="###">刷新</a></li>
+								</ul>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="info">
+					知识中心
+				</div>
+				<div class="info">
+					基础数据
+				</div>
+				<div class="info">
+					在线办公h
+				</div>
+				<div class="info">
+					管理中心
+				</div>
+				<div class="info">
+					开发中心
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="foot">
+		<span><img src="img/style04/foot_icon.jpg" width="25" height="35" /></span>
+		<span>所属组织：<a href="###">天鹅国际</a></span>
+		<span>所属部门：<a href="###">总经办</a></span>
+		<span>角色：<a href="###">超级管理员 公用角色</a></span>
+		<span class="time">当前时间：<a href="###">11时54分</a></span>
+		<span class="help">技术支持：029-88453031</span>
+	
+	</div>
+</div>
+</body>
+</html>

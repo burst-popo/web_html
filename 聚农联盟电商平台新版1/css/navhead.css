@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+.login_1{width:100%;height:30px;clear:both;background:url(../images/loginbg_1.jpg) repeat-x 0 0;margin:0 auto 0 auto;}
+.logininfo_1 {clear: both;height: 30px;width: 1002px;margin-top: 0px;margin-right: auto;margin-bottom: 0px;margin-left: auto;}
+a.loginlink_1 {color: #848484;text-decoration: none;margin: 0 12px 0 0;}
+a.loginlink_1:hover{text-decoration:underline;}
+.loginleft_1 a {color: #E86812;text-decoration: none;}
+.loginleft_1 a:hover{text-decoration:underline;}
+.head_1{width:1002px; height:111px; margin:0 auto 0 auto; clear:both;}
+.headleft_1{ width:280px; height:96px; background:url(../images/logo.jpg) no-repeat 0 0;float:left; margin:0 78px 0 0;}
+.headright_1{ width: 566px; height: 96px ;margin:0 39px 0 39px; float: right;}
+.loginleft_1 {font-size: 12px;line-height: 30px;float: left;height: 30px;width: 278px;}
+.loginright_1 {float: right;height: 30px;width: 218px;padding-right: 16px;padding-left: 16px;font-size: 12px;line-height: 30px;}
+.loginleft_1 span {color: #848484;}
+.nav_1{width: 100%    ; height:   37px    ; clear:both;background:url(../images/navbg_1.jpg) repeat-x 0 0; margin: 0 0 10px 0;}
+.nav_1 ul{ width:  1002px  ; height:  38px   ; clear:both; margin: 0 auto 0 auto;}
+.nav_1 ul li{ width:   125px  ; height: 38px     ; float:left; line-height:38px; text-align:center;}
+.nav_1 ul li.navad_1{ width: 187px  ; height:  15px  ; text-align:center; font-size:12px; line-height:15px; padding: 12px 25px 11px 24px; color:#FFFFFF; background:url(../images/navad_1.jpg); margin:0 0 0 15px;}
+a.navlink_1{ text-decoration:none; color:#fff; font-size:14px;display: block;}
+a.navlink_1:hover{ width:125px; height:38px; display: block; background:url(../images/navhover_1.jpg);}
+.hrhead_1{width: 553px  ; height:  12px ; padding:10px 0 10px 13px;}
+.search_1{ width:  554px  ; height: 35px    ; clear:both; background:url(../images/searchbg_1.jpg) no-repeat 0 0; padding:6px 6px 6px 6px;}
+.search_1 input{ width:482px  ; height: 30px   ; float: left; margin: 0 3px 0 0;}
+.searchicon_1{ width: 63px  ; height: 35px  ; display:block; float: left; background:url(../images/searchicon_1.jpg) no-repeat 0 0;}
+.hrfoot_1{ width:548px;height:17px;font-size:12px; padding:0 0 0 18px; color:#877D6C;}
+.hrhead_1 a{display:block;float:left; text-decoration:none; color:#877D6C; padding: 0 5px 0 0;}
+.hrhead_1 a:hover{text-decoration:underline;}
+.hrfoot_1 a{text-decoration:none;color:#877D6C;}
+.hrfoot_1 a:hover{ text-decoration:underline;}
+.hrheadfix_1{width:  1px   ; height:  12px    ; background:url(../images/hrheadfix_1.jpg);display:block; float:left; margin: 4px 17px 0 19px;}
+.hrfoot_1 span{ font-weight:bold; color:#877D6C; font-size:14px;}
+.foot_1{margin:10px auto 0 auto; width:719px; height:46px;border-top:solid 3px #877D6C; padding:0 141px 0 142px;color:#877D6C;font-size:12px;}
+.copyright_1{margin:10px 48px 0 45px;}

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style05/style05.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var info = $(".nav_wrapper ul li a");
+		var img = $(".nav_wrapper ul li img");
+		var showinfo = $(".mark span:eq(1)");
+		var showimg = $(".mark span:eq(0) img");
+		info.click(function(){
+			var text = $(this).text();
+			showinfo.text(text);
+			var link = $(this).parent().siblings().find("img").attr("src");
+			showimg.attr("src",link);
+			
+			
+		})
+	})
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="head">
+		<div class="logo"><a href="###"><img src="img/style05/logo.png" width="175" height="66" /></a></div>
+		<div class="wel">
+			<div class="wel_wrapper">
+				<p>欢迎来到<span>AZDMD</span>平台管理系统！</p>
+				<p class="wel_fix">Welcome to AstraZeneca <span>Master Data Management</span> System!</p>
+			</div>
+		</div>
+		<div class="out"><a href="###"><img src="img/style05/logout.png" width="58" height="66" /></a></div>
+	</div>
+	<div class="main">
+		<div class="nav_left">
+			<div class="nav_wrapper">
+			<p>
+				<span class="p_fix"><img src="img/style05/nav01.png" width="23" height="23" /></span>
+				<span>系统管理</span>
+			</p>
+			<ul>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">用户管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">角色权限</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">医生查询</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">消息推送</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">数据同步管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">接口管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item02.png" width="11" height="24" /></span>
+					<span><a href="###">接口调用日志</a></span>
+				</li>
+			</ul>
+			<p>
+				<span class="p_fix"><img src="img/style05/nav02.png" width="23" height="23" /></span>
+				<span>Apps接口管理</span>
+			</p>
+			<ul>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">Apps管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">设备管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">版本管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">用户组管理</a></span>
+				</li>
+				<li>
+					<span class="li_fix"><img src="img/style05/nav_item01.png" width="11" height="24" /></span>
+					<span><a href="###">Apps操作日志</a></span>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="list">
+			<div class="list_wrapper">
+				<div class="mark">
+					<span class="mark_fix"><img/></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

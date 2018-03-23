@@ -1,0 +1,992 @@
+<!DOCTYPE html PUbliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>聚农优品</title>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.KinSlideshow-1.0.js"></script>
+<script type="text/javascript" src="js/zuhetaocan.js"></script>
+<script type="text/javascript" src="js/showpic.js"></script>
+<!--<script type="text/javascript" src="js/tab.js"></script>-->
+<script type="text/javascript">
+$(function(){
+	$(".left_nav dd").hover(function(){
+		$(".nav_right",this).show();
+	});
+	$(".left_nav dd").mouseleave(function(){
+		$(".nav_right",this).hide();
+	});
+	$("#KinSlideshow").KinSlideshow();
+	$('.artist li').each(function(){
+		
+		$(this).find('.cover').css('top', -$(this).height());
+		
+		$(this).hover(function(){
+			$(this).find('.cover').animate({
+				'top': '0'
+			},300);
+		},function(){
+			$(this).find('.cover').animate({
+				'top':$(this).height()
+			},{
+				duration: 300,
+				complete:function(){
+					$(this).css('top', -$(this).parent('li').height())
+				}
+			});
+		});
+		
+	});
+});
+</script>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="head_bar">
+	<div class="wrapper_head">
+		<div class="wrapper_login">
+			<div class="login"> <span>您好，欢迎光临！</span> { <a href="###">登陆</a> }
+				{ <a href="###">注册</a> } <a href="###">我的订单</a> <span> <img src="img/shopping_cart.png" width="23" height="20" /> <a href="###">购物车</a> </span> </div>
+		</div>
+		<div class="wrapper_search">
+			<div class="logo"> <a href="###"> <img src="img/logo.png" width="273" height="30"/> </a> </div>
+			<div class="search">
+				<input name="" type="text" />
+				<a href="###">搜索</a> </div>
+		</div>
+	</div>
+	<div class="wrapper_nav">
+		<div class="nav">
+			<div class="nav_left">所有商品分类</div>
+			<div class="nav_right">
+				<ul>
+					<li><a href="###">首页</a></li>
+					<li><a href="###">限时抢购</a></li>
+					<li><a href="###">团购</a></li>
+					<li><a href="###">积分商城</a></li>
+					<li><a href="###">走进聚农</a></li>
+					<li><a href="###">南北特产</a></li>
+					<li><a href="###">海外特产</a></li>
+					<li><a href="###">精品套餐</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrapper_imgflow">
+	<div class="wrapper_navbar">
+		<div class="left_nav">
+			<dl>
+				<dd> <a href="javascript:" class="nav_left"><img src="img/品牌分类小图标.png" width="39" height="26" /><span>聚农品牌</span></a>
+					<div class="nav_right"><a href="javascript:">木雕</a><a href="javascript:">木雕</a><a href="javascript:">木雕</a></div>
+				</dd>
+				<dd> <a href="javascript:" class="nav_left"><img src="img/粮油米面小图标.png" width="39" height="26" /><span>粮油米面</span></a>
+					<div class="nav_right"><a href="javascript:">22222</a></div>
+				</dd>
+				<dd> <a href="javascript:" class="nav_left"><img src="img/干货调料.png" width="39" height="26" /><span>干货调料</span></a>
+					<div class="nav_right"><a href="javascript:">3333</a></div>
+				</dd>
+				<dd><a href="javascript:" class="nav_left"><img src="img/酒水茶饮.png" width="39" height="26" /><span>酒水茶饮</span></a></dd>
+				<dd><a href="javascript:" class="nav_left"><img src="img/地方特产.png" width="39" height="26" /><span>地方特产</span></a></dd>
+				<dd><a href="javascript:" class="nav_left"><img src="img/咸肉禽蛋.png" width="39" height="26" /><span>鲜肉禽蛋</span></a></dd>
+				<dd><a href="javascript:" class="nav_left"><img src="img/水产海鲜.png" width="39" height="26" /><span>水产海鲜</span></a></dd>
+				<dd><a href="javascript:" class="nav_left"><img src="img/蔬菜水果.png" width="39" height="26" /><span>蔬菜水果</span></a></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="wrapper_img">
+		<div id="KinSlideshow" style="visibility:hidden;"> <a href="###" target="_blank"><img src="img/1.jpg" alt="" width="838" height="638" /></a> <a href="###" target="_blank"><img src="img/2.jpg" alt="" width="838" height="638" /></a> <a href="###" target="_blank"><img src="img/3.jpg" alt="" width="838" height="638" /></a> <a href="###" target="_blank"><img src="img/4.jpg" alt="" width="838" height="638" /></a> <a href="###" target="_blank"><img src="img/5.jpg" alt="" width="838" height="638" /></a> </div>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="xinpinsudi">
+	<h2>新品速递</h2>
+	<div class="xpsd_list">
+		<ul>
+			<li class="xpsd_first"> <a href="info.html"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li class="xpsd_last"> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li class="clear_fix"></li>
+			<li class="xpsd_first"> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+			<li class="xpsd_last"> <a href="###"><img src="img/xpsd_001.jpg" /></a>
+				<div class="xpsd_text">
+					<p class="text_title">难以忘怀的情调</p>
+					<h2>葡萄的精华</h2>
+					<p>邂逅欧式风情</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="xinpinsudi">
+	<h2>热卖专区</h2>
+	<div class="xpsd_list">
+		<ul class="artist">
+			<li class="a1"><a href="###"><img width="230" height="354" src="images/16sucai.jpg" alt="张学友" /></a></li>
+			<li class="a2"> <img width="232" height="232" src="images/1f473f38-1548-44dc-a012-8668d2eb5ccf.jpg" /> <a class="cover" href="###"><strong>张震岳</strong><br />
+				<span>即将有5场演出</span><br />
+				查看详情</a> </li>
+			<li class="a3"> <img width="110" height="110" src="images/36c4f27a-e6a5-4ba2-b114-ded0f60280ed.jpg" /> <a class="cover" href="###"><strong>蔡琴</strong><br />
+				<span>即将有4场演出</span><br />
+				查看详情</a> </li>
+			<li class="a4"> <img width="110" height="110" src="images/5e34e608-c406-4a4e-a13d-7ba75479b3db.jpg" /> <a class="cover" href="###"><strong>郑钧</strong><br />
+				<span>即将有2场演出</span><br />
+				查看详情</a> </li>
+			<li class="a5"> <img width="110" height="110" src="images/d3a13a37-e663-4fb1-8039-3f65443c3c77.jpg" /> <a class="cover" href="###"><strong>费玉清</strong><br />
+				<span>即将有4场演出</span><br />
+				查看详情</a> </li>
+			<li class="a6"> <img width="110" height="110" src="images/68b371d1-e2ec-4a52-a318-babc9a7c3224.jpg" /> <a class="cover" href="###"><strong>陈绮贞</strong><br />
+				<span>即将有2场演出</span><br />
+				查看详情</a> </li>
+			<li class="a7"> <img width="110" height="110" src="images/1857d41d-4aed-436e-89d2-37a440b9bfb9.jpg" /> <a class="cover" href="###"><strong>王力宏</strong><br />
+				<span>即将有6场演出</span><br />
+				查看详情</a> </li>
+			<li class="a8"> <img width="110" height="110" src="images/e39bbd6b-1d9b-4be7-a1d7-abbe6e8d166b.jpg" /> <a class="cover" href="###"><strong>周杰伦</strong><br />
+				<span>即将有6场演出</span><br />
+				查看详情</a> </li>
+			<li class="a9"> <img width="232" height="110" src="images/cc958824-b2f5-426a-8e35-53eacef66adc.jpg" /> <a class="cover" href="###"><strong>迈克学摇滚</strong><br />
+				<span>即将有1场演出</span><br />
+				查看详情</a> </li>
+			<li class="a10"> <img width="110" height="110" src="images/60679a11-f6e0-4374-9f6a-99dd0462668a.jpg" /> <a class="cover" href="###"><strong>蔡依林</strong><br />
+				<span>即将有1场演出</span><br />
+				查看详情</a> </li>
+			<li class="a11"> <img width="110" height="110" src="images/193df31a-23ac-4f9a-b679-3fd7027d2db3.jpg" /> <a class="cover" href="###"><strong>17sucai.com</strong><br />
+				<span>17sucai.com</span><br />
+				查看详情</a> </li>
+			<li class="a12"> <img width="232" height="232" src="images/78ea2f3b-0749-45d4-915d-8f3ae9528fbe.jpg" /> <a class="cover" href="###"><strong>罗志祥</strong><br />
+				<span>即将有6场演出</span><br />
+				查看详情</a> </li>
+			<li class="a13"> <img width="184" height="110" src="images/60679a11-f6e0-4374-9f6a-99dd0462668a.jpg" /> <a class="cover" href="###"><strong>蔡依林</strong><br />
+				<span>即将有1场演出</span><br />
+				查看详情</a> </li>
+			<li class="a14"> <img width="184" height="110" src="images/193df31a-23ac-4f9a-b679-3fd7027d2db3.jpg" /> <a class="cover" href="###"><strong>17sucai.com</strong><br />
+				<span>17sucai.com</span><br />
+				查看详情</a> </li>
+			<li class="a15"> <img width="184" height="110" src="images/193df31a-23ac-4f9a-b679-3fd7027d2db3.jpg" /> <a class="cover" href="###"><strong>17sucai.com</strong><br />
+				<span>17sucai.com</span><br />
+				查看详情</a> </li>
+		</ul>
+		<ul class="artist">
+			<li class="a1"><a href="###"><img width="230" height="354" src="images/16sucai.jpg" alt="张学友" /></a></li>
+			<li class="a2"> <img width="232" height="232" src="images/1f473f38-1548-44dc-a012-8668d2eb5ccf.jpg" /> <a class="cover" href="###"><strong>张震岳</strong><br />
+				<span>即将有5场演出</span><br />
+				查看详情</a> </li>
+			<li class="a3"> <img width="110" height="110" src="images/36c4f27a-e6a5-4ba2-b114-ded0f60280ed.jpg" /> <a class="cover" href="###"><strong>蔡琴</strong><br />
+				<span>即将有4场演出</span><br />
+				查看详情</a> </li>
+			<li class="a4"> <img width="110" height="110" src="images/5e34e608-c406-4a4e-a13d-7ba75479b3db.jpg" /> <a class="cover" href="###"><strong>郑钧</strong><br />
+				<span>即将有2场演出</span><br />
+				查看详情</a> </li>
+			<li class="a5"> <img width="110" height="110" src="images/d3a13a37-e663-4fb1-8039-3f65443c3c77.jpg" /> <a class="cover" href="###"><strong>费玉清</strong><br />
+				<span>即将有4场演出</span><br />
+				查看详情</a> </li>
+			<li class="a6"> <img width="110" height="110" src="images/68b371d1-e2ec-4a52-a318-babc9a7c3224.jpg" /> <a class="cover" href="###"><strong>陈绮贞</strong><br />
+				<span>即将有2场演出</span><br />
+				查看详情</a> </li>
+			<li class="a7"> <img width="110" height="110" src="images/1857d41d-4aed-436e-89d2-37a440b9bfb9.jpg" /> <a class="cover" href="###"><strong>王力宏</strong><br />
+				<span>即将有6场演出</span><br />
+				查看详情</a> </li>
+			<li class="a8"> <img width="110" height="110" src="images/e39bbd6b-1d9b-4be7-a1d7-abbe6e8d166b.jpg" /> <a class="cover" href="###"><strong>周杰伦</strong><br />
+				<span>即将有6场演出</span><br />
+				查看详情</a> </li>
+			<li class="a9"> <img width="232" height="110" src="images/cc958824-b2f5-426a-8e35-53eacef66adc.jpg" /> <a class="cover" href="###"><strong>迈克学摇滚</strong><br />
+				<span>即将有1场演出</span><br />
+				查看详情</a> </li>
+			<li class="a10"> <img width="110" height="110" src="images/60679a11-f6e0-4374-9f6a-99dd0462668a.jpg" /> <a class="cover" href="###"><strong>蔡依林</strong><br />
+				<span>即将有1场演出</span><br />
+				查看详情</a> </li>
+			<li class="a11"> <img width="110" height="110" src="images/193df31a-23ac-4f9a-b679-3fd7027d2db3.jpg" /> <a class="cover" href="###"><strong>17sucai.com</strong><br />
+				<span>17sucai.com</span><br />
+				查看详情</a> </li>
+			<li class="a12"> <img width="232" height="232" src="images/78ea2f3b-0749-45d4-915d-8f3ae9528fbe.jpg" /> <a class="cover" href="###"><strong>罗志祥</strong><br />
+				<span>即将有6场演出</span><br />
+				查看详情</a> </li>
+			<li class="a13"> <img width="184" height="110" src="images/60679a11-f6e0-4374-9f6a-99dd0462668a.jpg" /> <a class="cover" href="###"><strong>蔡依林</strong><br />
+				<span>即将有1场演出</span><br />
+				查看详情</a> </li>
+			<li class="a14"> <img width="184" height="110" src="images/193df31a-23ac-4f9a-b679-3fd7027d2db3.jpg" /> <a class="cover" href="###"><strong>17sucai.com</strong><br />
+				<span>17sucai.com</span><br />
+				查看详情</a> </li>
+			<li class="a15"> <img width="184" height="110" src="images/193df31a-23ac-4f9a-b679-3fd7027d2db3.jpg" /> <a class="cover" href="###"><strong>17sucai.com</strong><br />
+				<span>17sucai.com</span><br />
+				查看详情</a> </li>
+		</ul>
+	</div>
+</div>
+<div class="ad"><a href="###"><img src="img/ad.jpg" width="1170" height="110" /></a></div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>粮油米面</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="list.html">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>干货调料</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner01">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn01">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img_gh">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper_gh">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>酒水茶饮</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner02">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn02">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img_js">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper_js">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>地方特产</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner03">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn03">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img_df">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper_df">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>鲜肉禽蛋</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner04">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn04">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img_xr">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper_xr">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>水产海鲜</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner05">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn05">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img_sc">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper_sc">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showbox">
+	<div class="sbox_head">
+		<h2>蔬菜水果</h2>
+		<ul>
+			<li><a href="###">蓝莓</a></li>
+			<li><a href="###">鸭舌</a></li>
+			<li><a href="###">罐头</a></li>
+			<li><a href="###">花生</a></li>
+			<li class="sbox_lifix"><a href="###">牛肉</a></li>
+		</ul>
+	</div>
+	<div class="sbox_content">
+		<div class="sbc_pinpai">
+			<div class="box">
+				<ul class="pro_list" id="inner06">
+					<div class="box_icon"></div>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+					<li> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###"><img src="img/pinpai.jpg" /></a> <a href="###">更多》</a> </li>
+				</ul>
+				<div class="top">
+					<ul class="btn06">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_list">
+			<div class="sbc_list_wrapper">
+				<div class="sbc_list_show">
+					<div class="show_wrapper">
+						<div class="show_img_sg">
+							<ul>
+								<li><a href=""><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/xpsd_001.jpg" width="243" height="451" /></a></li>
+								<li><a href=""><img src="img/1.jpg" width="243" height="451" /></a></li>
+							</ul>
+						</div>
+						<div class="show_info">
+							<div class="show_info_wrapper_sg">
+								<ul>
+									<li id="info_01">五年结果 人间美味</li>
+									<li id="info_02">五年结果 人间美味</li>
+									<li id="info_03">五年结果 人间美味</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sbc_list_pic">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+				<div class="sbc_list_pic sbc_pic_fix">
+					<div class="sbc_list_pshow">
+						<div class="pshow_text">
+							<h2>清爽的香辣体会</h2>
+							<p class="pshow_title">开胃山楂</p>
+							<p>勾起你的馋虫</p>
+						</div>
+						<a href="###"><img src="img/sbc_list_pic.jpg" width="243" height="451" /></a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="sbc_right">
+			<div class="sbc_r_wrapper">
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+				<div class="sbc_r_top">
+					<div class="r_top_text">
+						<h2><a href="###">坚果</a></h2>
+						<p><a href="###">开心果</a></p>
+						<p><a href="###">杏仁</a></p>
+						<p><a href="###">腰果</a></p>
+					</div>
+					<div class="r_top_img"> <a href="###"> <img src="img/r_top_img.jpg" width="129" height="242" /> </a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<div class=footer>
+	<div class=footer_1>
+		<div class=xshou>
+			<ul>
+				<div class=xi_fix></div>
+				<div class=xi style="WIDTH: 297px">
+					<div class=sacx_xi_b>
+						<ul>
+							<b>走进聚农 </b>
+							<li><a title=聚农文化 href="###" target=_blank>聚农文化 </a></li>
+							<li><a title=聚农简介 href="###" target=_blank>聚农简介 </a></li>
+							<li><a title=聚农业务链 href="###" target=_blank>聚农业务链 </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class=xi_fix></div>
+				<div class=xi style="WIDTH: 297px">
+					<div class=sacx_xi_b>
+						<ul>
+							<b>平台介绍 </b>
+							<li><a title=聚农平台介绍 href="###" target=_blank>聚农平台介绍 </a></li>
+							<li><a title=电子商务平台 href="###" target=_blank>电子商务平台 </a></li>
+							<li><a title=ERP管理平台 href="###" target=_blank>ERP管理平台 </a></li>
+							<li><a title=中国互联网电视平台 href="###" target=_blank>中国互联网电视平台 </a></li>
+							<li><a title=农业技术与信息平台 href="###" target=_blank>农业技术与信息平台 </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class=xi_fix></div>
+				<div class=xi style="WIDTH: 297px">
+					<div class=sacx_xi_b>
+						<ul>
+							<b>帮助中心 </b>
+							<li><a title=VIP卡购物说明 href="###" target=_blank>VIP卡购物说明 </a></li>
+							<li><a title=会员注册流程 href="###" target=_blank>会员注册流程 </a></li>
+							<li><a title=购物流程图 href="###" target=_blank>购物流程图 </a></li>
+							<li><a title=退货流程 href="###" target=_blank>退货流程 </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class=xi_fix></div>
+				<div class=xi style="WIDTH: 297px">
+					<div class=sacx_xi_b>
+						<ul>
+							<b>招贤纳士 </b>
+							<li><a title=招聘岗位 href="###" target=_blank>招聘岗位 </a></li>
+							<li><a title=用人理念 href="###" target=_blank>用人理念 </a></li>
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<div class=footer_2>
+		<div><img src="img/shuomin.gif" /> <br />
+			<br />
+		</div>
+		<div class=bquan>
+			<div><br />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

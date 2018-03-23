@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+body { font-size:12px; font-family:"微软雅黑" !important; }
+html, body, div, span, ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form, a, em, img { margin:0; padding:0; list-style:none; border:0 }
+i, em, var, h3, h2, h5 { font-style:normal; font-weight:normal; }
+a { text-decoration:none; outline:none; color:#4f3c2c; }
+a:focus { outline:none; -moz-outline:none; }
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; overflow:hidden; }
+textarea { resize:none; }
+/*初始化end*/

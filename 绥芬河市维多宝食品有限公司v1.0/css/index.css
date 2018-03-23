@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding:0;
+	
+	
+}
+#text {
+	color: #FFF;
+	height: 33px;
+	width: 562px;
+	margin-top: 86px;
+	margin-left: 228px;
+	font-family: "Adobe 黑体 Std R";
+	font-size: 30px;
+	letter-spacing: 100%;
+}
+
+#header {
+	height: 208px;
+	width: 100%;
+	background-image: url(../images/%E6%9C%AA%E5%91%BD%E5%90%8D-1.fw.png);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+}

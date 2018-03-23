@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Document */
+body { font-size:12px; font-family:"微软雅黑" !important; }
+html, body, div, span, ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form, a, em, img { margin:0; padding:0; list-style:none; border:0 }
+i, em, var, h3, h2, h5 { font-style:normal; font-weight:normal; }
+a { text-decoration:none; outline:none; color:#4f3c2c; }
+a:focus { outline:none; -moz-outline:none; }
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; overflow:hidden; }
+textarea { resize:none; }
+/*初始化end*/
+
+.wrapper { width:879px; height:748px; margin:0 auto; background:#40474F; }
+
+/*头部区域开始*/
+.head { width:879px; height:66px; clear:both; }
+.logo { width:175px; height:66px; float:left; margin:0 0 0 18px; }
+.wel { width:276px; height:66px; float:left; margin:0 0 0 340px; }
+.wel .wel_wrapper { width:auto; height:66px; clear:both; }
+.wel_wrapper p { color:#E6E8EA; font-size:13px; line-height:13px; text-align:center;margin:10px 0 0 0; }
+.wel_wrapper p.wel_fix { font-size: 10px; line-height: 25px; text-align: left; width: 292px;margin:0px; }
+.wel_wrapper p span{color:#02DDFF;}
+.out{width:58px;height:66px;float:left;margin:0 0 0 12px;}
+/*头部区域结束*/
+
+/*内容区域开始*/
+.main{width:879px;height:661px;clear:both;}
+.nav_left{width:207px;height:659px;float:left;margin:0 0 0 3px;border-top:1px solid #35424B;border-left:1px solid #35424B;border-bottom:1px solid #35424B;}
+.nav_left .nav_wrapper{width:207px;height:659px;}
+.nav_wrapper p{width:204px;height:32px;border-bottom:1px solid #7A8895;clear:both;}
+.nav_wrapper p span{display:block;float:left;width:auto;height:32px;line-height:32px;font-size:13px;font-weight:bold;color:#FDFDFB;text-align:left;}
+.nav_wrapper p span.p_fix{width:23px;height:23px;margin:5px 8px 3px 13px;}
+.nav_wrapper ul{margin:0 30px 0 27px;}
+.nav_wrapper ul li{width:147px;height:24px;border-bottom:1px solid #2E3C4A;clear:both;}
+.nav_wrapper ul li span{display:block;float:left;width:auto;height:24px;line-height:24px;font-size:12px;text-align:left;}
+.nav_wrapper ul li span.li_fix{width:11px;height:24px;margin:0 13px;}
+.nav_wrapper ul li span a{color:#95B8C1;text-decoration:none;}
+.list{width:668px;height:660px;float:left;}
+.list .list_wrapper{width:668px;height:660px;clear:both;}
+.list_wrapper .mark{width:668px;height:34px;background:#3B4E5C;}
+.mark span{display:block;float:left;width:auto;height:24px;line-height:24px;color:#FFFFFF;text-align:left;font-size:12px;font-weight:bold;margin:5px 0;}
+.mark span.mark_fix{margin:5px 5px 5px 36px;}
+/*内容区域结束*/

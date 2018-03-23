@@ -1,0 +1,58 @@
+
+.box {
+	margin: 10px auto; border: 1px solid rgb(204, 204, 204); border-image: none; width: 764px; height: 200px; overflow: hidden;
+}
+.top {
+	padding: 29px 10px 0px; width: 709px; height: 48px; overflow: hidden; clear: both;
+}
+ul.btn {
+	list-style: none; float: right;
+}
+ul.btn li {
+	background: url("../images/a.png") no-repeat 0px 0px; width: 12px; height: 11px; color: rgb(255, 0, 0); float: left; cursor: pointer;
+}
+ul.btn li.hover {
+	background: url("../images/a_hover.png") no-repeat 0px 0px;
+}
+ul.pro_list {
+	list-style: none; margin: 0px 0px 0px 10px; height: 123px; clear: both;
+}
+ul.pro_list li {
+	float: left;
+}
+.foot {
+	width: 754px; height: 123px; clear: both;
+}
+.foot h3 {
+	padding: 0px 0px 0px 289px; text-align: left; color: rgb(204, 204, 204); line-height: 47px; letter-spacing: 2px; font-size: 14px;
+}
+ul.list {
+	list-style: none; clear: both;
+}
+ul.list li {
+	border: 1px solid rgb(0, 0, 0); border-image: none; width: 120px; height: 74px; float: left;
+}
+li.price p {
+	width: 120px; height: 28px; text-align: center; line-height: 28px; font-size: 13px;
+}
+li.price p.zu_price {
+	height: 46px; line-height: 46px;
+}
+ul.list li.price p a {
+	width: auto; height: auto; color: rgb(0, 0, 0); text-decoration: none; display: inline; position: static;
+}
+ul.list li a {
+	width: 120px; height: 74px; text-decoration: none; display: block; position: relative;
+}
+ul.list li.icon {
+	border: currentColor; border-image: none; width: 30px; text-align: center; line-height: 76px;
+}
+ul.list li.price {
+	margin: 0px 0px 0px 10px; width: 120px; text-align: center; line-height: 100px;
+}
+.detail {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(0, 0, 0) rgb(0, 0, 0) currentColor; padding: 5px; border-image: none; left: 0px; top: 78px; width: 108px; height: 20px; text-align: center; color: rgb(0, 0, 0); line-height: 20px; font-size: 12px; position: absolute;
+}
+.price_jq {
+	border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(0, 0, 0) rgb(0, 0, 0); padding: 5px; border-image: none; left: 0px; top: 98px; width: 108px; height: 12px; text-align: center; color: rgb(0, 0, 0); line-height: 12px; font-size: 12px; position: absolute;
+}

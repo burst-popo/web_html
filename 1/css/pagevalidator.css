@@ -1,0 +1,30 @@
+.msgNormal {
+	background: url("validate_normal.gif") no-repeat; width: 280px; color: rgb(153, 153, 153); padding-top: 5px; padding-bottom: 3px; padding-left: 25px; font-size: 12px;
+}
+.msgNormal br {
+	display: none;
+}
+.msgOnFocus {
+	background: url("validate_waring.gif") no-repeat rgb(233, 240, 255); width: 280px; padding-top: 5px; padding-bottom: 3px; padding-left: 25px; font-size: 12px;
+}
+.msgOnFocus br {
+	display: none;
+}
+.msgError {
+	background: url("validate_error.gif") no-repeat rgb(255, 242, 233); width: 280px; padding-top: 5px; padding-bottom: 3px; padding-left: 25px; font-size: 12px;
+}
+.msgError br {
+	display: none;
+}
+.msgError a {
+	color: red;
+}
+.msgOK {
+	background: url("validate_success.gif") no-repeat rgb(233, 255, 235); width: 280px; padding-top: 5px; padding-bottom: 3px; padding-left: 25px; font-size: 12px;
+}
+.msgOK br {
+	display: none;
+}
+.msgAjaxing {
+	background: url("spinner.gif") no-repeat 3px 3px rgb(233, 255, 235); padding-top: 5px; padding-bottom: 3px; padding-left: 25px; font-size: 12px;
+}

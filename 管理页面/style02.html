@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>style02</title>
+<link href="css/style02/style02.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var num ;
+		$(".left_item_wrapper").hide();
+		$(".left_wrapper ul li").click(function(){
+			$(this).css({background:"#EAEDFF"}).siblings().css({background:"#248BE7"});
+			$(this).find("a").css({color:"#0365CA"}).parent().siblings().find("a").css({color:"#FDFEFF"});
+			num = $(this).index();
+			if($(".left_item_wrapper").eq(num).is(":hidden")){
+				$(".left_item_wrapper").eq(num).show().siblings().hide();
+			}else{
+					
+				$(".left_item_wrapper").eq(num).hide().siblings().hide();
+				$(this).css({background:"#248BE7"});
+				$(this).find("a").css({color:"#FDFEFF"});
+			}
+			
+		});		
+	})
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="head_wrapper">
+		<div class="logo">
+			<a href="###"><img src="img/style02/logo.jpg" width="228" height="66" /></a>
+		</div>
+		<div class="wel">
+			<span class="wel_fix"><img src="img/style02/wel01.jpg" width="16" height="16" /></span>
+			<span><a href="###">用户名</a></span>
+			<span class="wel_fix"><img src="img/style02/wel02.jpg" width="16" height="16" /></span>
+			<span><a href="###">2013-01-25</a></span>
+		</div>
+		<div class="head_tool">
+			<ul>
+				<li><a href="###"><img src="img/style02/head_tool01.jpg" width="16" height="16" /></a></li>
+				<li><a href="###"><img src="img/style02/head_tool02.jpg" width="16" height="16" /></a></li>
+				<li><a href="###"><img src="img/style02/head_tool03.jpg" width="16" height="16" /></a></li>
+				<li><a href="###"><img src="img/style02/head_tool04.jpg" width="16" height="16" /></a></li>
+				<li><a href="###"><img src="img/style02/head_tool05.jpg" width="16" height="16" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="left_nav">
+			<div class="left_wrapper">
+				<ul>
+					<li>
+						<img src="img/style02/left_nav_001.jpg" width="23" height="23" />
+						<a href="###">人员</a>
+					</li>
+					<li>
+						<img src="img/style02/left_nav_001.jpg" width="23" height="23" />
+						<a href="###">产品</a>
+					</li>
+					<li>
+						<img src="img/style02/left_nav_001.jpg" width="23" height="23" />
+						<a href="###">项目</a>
+					</li>
+					<li>
+						<img src="img/style02/left_nav_001.jpg" width="23" height="23" />
+						<a href="###">流程</a>
+					</li>
+					<li>
+						<img src="img/style02/left_nav_001.jpg" width="23" height="23" />
+						<a href="###">门户</a>
+					</li>
+				</ul>
+				<div class="left_item">
+					<div class="left_item_wrapper">
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">我的空间</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">我的信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_itembox_fix">
+							<ul>
+								<li class="item_box_title"><a href="###">组织信息</a></li>
+								<li class="item01"><a href="###">部门信息</a></li>
+								<li class="item02"><a href="###">岗位信息</a></li>
+								<li class="item03"><a href="###">资源管道</a></li>
+								<li class="item04"><a href="###">部门绩效</a></li>
+								<li class="item05"><a href="###">部门报告</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left_item_wrapper">
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">产品信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">产品信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_itembox_fix">
+							<ul>
+								<li class="item_box_title"><a href="###">产品信息</a></li>
+								<li class="item01"><a href="###">部门信息</a></li>
+								<li class="item02"><a href="###">岗位信息</a></li>
+								<li class="item03"><a href="###">资源管道</a></li>
+								<li class="item04"><a href="###">部门绩效</a></li>
+								<li class="item05"><a href="###">部门报告</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left_item_wrapper">
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">项目信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">项目信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_itembox_fix">
+							<ul>
+								<li class="item_box_title"><a href="###">项目信息</a></li>
+								<li class="item01"><a href="###">部门信息</a></li>
+								<li class="item02"><a href="###">岗位信息</a></li>
+								<li class="item03"><a href="###">资源管道</a></li>
+								<li class="item04"><a href="###">部门绩效</a></li>
+								<li class="item05"><a href="###">部门报告</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left_item_wrapper">
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">流程信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">流程信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_itembox_fix">
+							<ul>
+								<li class="item_box_title"><a href="###">流程信息</a></li>
+								<li class="item01"><a href="###">部门信息</a></li>
+								<li class="item02"><a href="###">岗位信息</a></li>
+								<li class="item03"><a href="###">资源管道</a></li>
+								<li class="item04"><a href="###">部门绩效</a></li>
+								<li class="item05"><a href="###">部门报告</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left_item_wrapper">
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">门户信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_item_box">
+							<ul>
+								<li class="item_box_title"><a href="###">门户信息</a></li>
+								<li class="item01"><a href="###">我的任务</a></li>
+								<li class="item02"><a href="###">我的需求</a></li>
+								<li class="item03"><a href="###">我的建议</a></li>
+							</ul>
+						</div>
+						<div class="left_itembox_fix">
+							<ul>
+								<li class="item_box_title"><a href="###">门户信息</a></li>
+								<li class="item01"><a href="###">部门信息</a></li>
+								<li class="item02"><a href="###">岗位信息</a></li>
+								<li class="item03"><a href="###">资源管道</a></li>
+								<li class="item04"><a href="###">部门绩效</a></li>
+								<li class="item05"><a href="###">部门报告</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tool">
+			<div class="clear"></div>
+			<ul>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_001.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">产品列表</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_002.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">需求池</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_003.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">产品策划</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_004.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">发布申请</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_005.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">退市申请</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_006.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">立项书</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_007.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">总体计划</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_008.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">模板配置</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_001.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">产品列表</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_002.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">需求池</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_003.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">产品策划</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_004.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">发布申请</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_005.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">退市申请</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_006.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">立项书</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_007.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">总体计划</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_008.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">模板配置</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_001.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">产品列表</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_002.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">需求池</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_003.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">产品策划</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_004.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">发布申请</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_005.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">退市申请</a></span>
+				</li>
+				<li>
+					<span class="tool_img"><a href="###"><img src="img/style02/tool_006.jpg" width="72" height="72" /></a></span>
+					<span><a href="###">立项书</a></span>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="tool_nav">
+				<div class="tn_wrapper">
+					<div class="tn_list">
+						<ul>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list01.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">时间管理</a></span>
+							</li>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list02.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">任务列表</a></span>
+							</li>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list03.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">评审任务</a></span>
+							</li>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list04.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">我的BUG</a></span>
+							</li>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list05.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">我的需求</a></span>
+							</li>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list06.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">通讯录</a></span>
+							</li>
+							<li>
+								<span class="list_img"><a href="###"><img src="img/style02/tn_list07.jpg" width="72" height="72" /></a></span>
+								<span><a href="###">公共资料</a></span>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+</body>
+</html>

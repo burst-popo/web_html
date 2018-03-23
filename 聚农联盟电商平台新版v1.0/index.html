@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站模板</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/jspic.css" rel="stylesheet" type="text/css" />
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+<SCRIPT src="js/ScrollPic.js" type=text/javascript></SCRIPT>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bxCarousel.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#demo').bxCarousel({
+		display_num: 4, 
+		move: 4,
+		margin: 10 
+	});
+});
+</script>
+</head>
+
+<body style="padding-top:0px;padding-bottom:0px;" onload="MM_showHideLayers('navbar','','hide','providelist','','hide','buylist','','hide')">
+<div class="login">
+	<div class="logininfo">
+		<div class="loginleft">
+    		<span>您好，欢迎来到聚农联盟电商平台</span>
+        	<a href="#">请登陆</a>
+        	<a href="#">免费注册</a>
+    	</div>
+    	<div class="loginright">
+    		<a class="loginlink" href="#">商务中心</a>
+    		<a class="loginlink" href="#">网刊</a>
+    		<a class="loginlink" href="#">手机版</a>
+    		<a class="loginlink" href="#">帮助中心</a>
+    	</div>
+     </div>
+</div>
+<div class="head">
+	<div class="headleft"></div>
+    <div class="headright">
+    	<div class="hrhead">
+        	<a href="#">供应</a>
+            <span class="hrheadfix"></span>
+            <a href="#">求购</a>
+            <span class="hrheadfix"></span>
+        	<a href="#">商城</a>
+            <span class="hrheadfix"></span>
+        	<a href="#">农企</a>  
+        </div>
+        <div class="search">
+        	<input name="" type="text" />
+            <a  class="searchicon" href="#"></a>
+        </div>
+        <div class="hrfoot">
+        	<span>热门搜索：</span>
+            	<a href="#">白菜</a>&nbsp;
+                <a href="#">黄瓜</a>&nbsp;
+                <a href="#">樱桃</a>&nbsp;
+                <a href="#">蓝莓</a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+	<ul>
+    	<li><a href="#">首页</a></li>
+        <li onmouseover="MM_showHideLayers('providelist','','show')" onmouseout="MM_showHideLayers('providelist','','hide')"><a href="#">供应</a></li>
+        <li onmouseover="MM_showHideLayers('buylist','','show')" onmouseout="MM_showHideLayers('buylist','','hide')"><a href="#">求购</a></li>
+        <li onmouseover="MM_showHideLayers('navbar','','show')" onmouseout="MM_showHideLayers('navbar','','hide')"><a href="#">商城</a></li>
+        <li><a href="#">招商</a></li>
+        <li><a href="#">企业</a></li>
+    </ul>
+   <div id="navbar">
+    	<ul onmouseover="MM_showHideLayers('navbar','','show')" onmouseout="MM_showHideLayers('navbar','','hide')">
+    		<li><a href="#">蔬菜</a></li>
+        	<li><a href="#">水果</a></li>
+        	<li><a href="#">生鲜</a></li>
+            <li><a href="#">五谷</a></li>
+        	<li><a href="#">调味料</a></li>
+        	<li><a href="#">养生</a></li>
+    	</ul>
+   </div>
+   <div id="providelist">
+    	<ul onmouseover="MM_showHideLayers('providelist','','show')" onmouseout="MM_showHideLayers('providelist','','hide')">
+    		<li><a href="#">蔬菜</a></li>
+        	<li><a href="#">水果</a></li>
+        	<li><a href="#">生鲜</a></li>
+            <li><a href="#">五谷</a></li>
+        	<li><a href="#">调味料</a></li>
+        	<li><a href="#">养生</a></li>
+    	</ul>
+   </div>
+   <div id="buylist">
+    	<ul onmouseover="MM_showHideLayers('buylist','','show')" onmouseout="MM_showHideLayers('buylist','','hide')">
+    		<li><a href="#">蔬菜</a></li>
+        	<li><a href="#">水果</a></li>
+        	<li><a href="#">生鲜</a></li>
+            <li><a href="#">五谷</a></li>
+        	<li><a href="#">调味料</a></li>
+        	<li><a href="#">养生</a></li>
+    	</ul>
+   </div>
+</div>
+<div class="main">
+	<div class="mhead">
+   		<div class="mhleft">
+        	<div class="mhlhead">
+            	<h5>质优产品</h5>
+                <ul>
+                	<li>产品名称</li>
+                    <li>产品名称</li>
+                    <li class="mhlheadfix">产品名称</li>
+                    <li>产品名称</li>
+                    <li>产品名称</li>
+                    <li class="mhlheadfix">产品名称</li>
+                </ul>
+            	<h5>质优产品</h5>
+                <ul>
+                	<li>产品名称</li>
+                    <li>产品名称</li>
+                    <li class="mhlheadfix">产品名称</li>
+                    <li>产品名称</li>
+                    <li>产品名称</li>
+                    <li class="mhlheadfix">产品名称</li>
+                </ul>
+                <h5>质优产品</h5>
+                <ul>
+                	<li>产品名称</li>
+                    <li>产品名称</li>
+                    <li class="mhlheadfix">产品名称</li>
+                    <li>产品名称</li>
+                    <li>产品名称</li>
+                    <li class="mhlheadfix">产品名称</li>
+                </ul>
+            </div>
+            <a href="#"><img src="images/img01.jpg" width="231" height="181" /></a>
+        </div>
+        <div class="mhcenter">
+        	<a href="#"><img src="images/img02.jpg" width="518" height="285" /></a>
+            <div class="mhcfoot">
+            	<a href="#"><img src="images/img03.jpg" width="164" height="89" /></a>
+                <a href="#"><img src="images/img03.jpg" width="164" height="89" /></a>
+            	<a class="mhcfootfix" href="#"><img src="images/img03.jpg" width="164" height="89" /></a>
+            </div>
+      </div>
+        <div class="mhright">
+        	<a class="mhrhead" href="#"><img src="images/img04.jpg" width="231" height="153" /></a>
+            <a class="mhrcenter" href="#"><img src="images/img05.jpg" width="231" height="122" /></a>
+        	<a class="mhrfoot" href="#"><img src="images/img06.jpg" width="231" height="89" /></a>
+        
+        </div>
+  </div>
+  	<div class="pichead">
+    	<div class="phleft">
+        	<p>特色产品</p>
+            <ul>
+           	  	<li>
+           	    	<a href="#">
+                		<img src="images/img08.jpg" width="60" height="54" />
+                	</a> 
+               		<h5 class="name"> 产品名称</h5>
+                	<h5 class="from">原产地</h5>
+                </li>
+                <li>
+                	<a href="#">
+                		<img src="images/img08.jpg" width="60" height="54" />
+                	</a> 
+               		<h5 class="name"> 产品名称</h5>
+                	<h5 class="from">原产地</h5>
+                </li>
+            	<li>
+                	<a href="#">
+                		<img src="images/img08.jpg" width="60" height="54" />
+                	</a> 
+               		<h5 class="name"> 产品名称</h5>
+                	<h5 class="from">原产地</h5>
+                </li>
+            	<li class="phllifix">
+                	<a href="#">
+                		<img src="images/img08.jpg" width="60" height="54" />
+                	</a> 
+               		<h5 class="name"> 产品名称</h5>
+                	<h5 class="from">原产地</h5>
+                </li>
+           </ul>
+        </div>
+        <div class="phcenter">
+        	<a href=""><img src="images/img07.jpg" width="519" height="129" /></a>
+            <div class="phcbox">
+            	<p>热门推荐</p>
+                <ul>
+                	<li>
+                    	<a href="#">
+                       		<img src="images/img09.jpg" width="124" height="125" /> 
+                        </a>
+                        <h5 class="phc_name">[产品名]</h5>
+                        <h5 class="phc_info">产品介绍</h5>
+                    </li>
+                   	<li>
+                    	<a href="#">
+                       		<img src="images/img09.jpg" width="124" height="125" /> 
+                        </a>
+                        <h5 class="phc_name">[产品名]</h5>
+                        <h5 class="phc_info">产品介绍</h5>
+                    </li>
+                	<li>
+                    	<a href="#">
+                       		<img src="images/img09.jpg" width="124" height="125" /> 
+                        </a>
+                        <h5 class="phc_name">[产品名]</h5>
+                        <h5 class="phc_info">产品介绍</h5>
+                    </li>
+                	<li class="phclifix">
+                    	<a href="#">
+                       		<img src="images/img09.jpg" width="124" height="125" /> 
+                        </a>
+                        <h5 class="phc_name">[产品名]</h5>
+                        <h5 class="phc_info">产品介绍</h5>
+                    </li>
+               </ul>
+            </div>
+        </div>
+        <div class="phright">
+        	<p>正宗原产地</p>
+            <ul>
+            	<li>
+           	    	<a href="#">
+                    	<img src="images/img08.jpg" width="60" height="54" />
+                    </a>
+                    <h5 class="name">产品名称</h5>
+                    <h5 class="from">原产地</h5>
+                 </li>
+                <li>
+                	 <a class="rightlink" href="#">
+                    	<img src="images/img08.jpg" width="60" height="54" />
+                    </a>
+                    <h5 class="rname">产品名称</h5>
+                    <h5 class="rfrom">原产地</h5>
+                   
+              </li>
+            	<li>
+                	<a href="#">
+                		<img src="images/img08.jpg" width="60" height="54" />
+                    </a>
+                    <h5 class="name">产品名称</h5>
+                    <h5 class="from">原产地</h5>
+                </li>
+            	<li class="phrlifix">
+                	 <a class="rightlink" href="#">
+                    	<img src="images/img08.jpg" width="60" height="54" />
+                    </a>
+                    <h5 class="rname">产品名称</h5>
+                    <h5 class="rfrom">原产地</h5>
+                   
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mpic">
+    	<a class="mpiclink" href="#">
+       		<img src="images/mpicleft.jpg" width="231" height="151" />
+        </a>
+        <div class="floatpic">
+        <div class="demo">
+    <div class="bx_wrap">
+        <div class="bx_container">
+          <ul id="demo">
+            <li><a href="###"><img  alt="#"  src="images/floatimg01.jpg"></a></li>
+            <li><a href="###"><img  alt="#"  src="images/floatimg01.jpg"></a></li>
+            <li><a href="###"><img  alt="#"  src="images/floatimg01.jpg"></a></li>
+            <li><a href="###"><img  alt="#"  src="images/floatimg01.jpg"></a></li>
+            <li><a href="###"><img  alt="#"  src="images/floatimg01.jpg"></a></li>
+            <li><a href="###"><img  alt="#"  src="images/floatimg01.jpg"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        </div>
+        <p>&nbsp;</p>
+  </div>
+   	<div class="market">
+    	<p>
+        	<span>生鲜菜市</span>
+        	<a href="###">更多>></a>
+        </p>
+    	<div class="marketul">
+        	<ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+               	</li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li class="marketulfix">
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li class="marketulfix">
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+               	</li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li class="marketulfix">
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+        	</ul>
+        </div>
+    </div>
+    <div class="market">
+    	<p>
+        
+        <span>农副产品</span>
+        	<a href="###">更多>></a>
+        </p>
+    	<div class="marketul">
+        	<ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+               	</li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li class="marketulfix">
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li class="marketulfix">
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+               	</li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+                <li class="marketulfix">
+                	<a href="#">
+                    	<img src="images/market01.jpg" width="223" height="181" />
+                    </a>
+                    <h5 class="price">&yen;85.00/件</h5>
+                    <h5 class="blue">仙居高山提子批发</h5>
+                    <h5 class="gray">浙江台州市</h5>
+                    <a href="#">吕晓云（个体经营）</a>
+                </li>
+        	</ul>
+        </div>
+    </div>
+    <div class="productlist"></div>
+    <div class="hotlist_1">
+    	<p>
+        	<img src="images/slficon_1.jpg" width="24" height="24" />
+   	 	  <span>热门供应</span>
+		</p>
+        <ul>
+       	  	<li>
+				<img src="images/hotli01_1.jpg" width="186" height="144" />                 
+                海南香蕉 
+           	</li>
+            <li>
+				<img src="images/hotli01_1.jpg" width="186" height="144" />                 
+                海南香蕉
+            </li>
+            <li>
+				<img src="images/hotli01_1.jpg" width="186" height="144" />                 
+                海南香蕉
+            </li>
+            <li>
+				<img src="images/hotli01_1.jpg" width="186" height="144" />                 
+                海南香蕉
+            </li>
+            <li class="hotlifix">
+				<img src="images/hotli01_1.jpg" width="186" height="144" />                 
+                海南香蕉
+            </li>
+    </ul>
+  </div>
+    <div class="hotlist_1">
+    	<p>
+        	<img src="images/slficon_1.jpg" width="24" height="24" />
+   	 	  <span>热门供应商</span>
+		</p>
+        <ul>
+       	  	<li>
+   	    		<img src="images/hotli02_1.jpg" width="186" height="144" /> 
+            	许昌市蓝泰实业有限公司 
+            </li>
+            <li>
+				<img src="images/hotli02_1.jpg" width="186" height="144" />                 
+                许昌市蓝泰实业有限公司 
+            </li>
+            <li>
+				<img src="images/hotli02_1.jpg" width="186" height="144" />                 
+                许昌市蓝泰实业有限公司 
+            </li>
+            <li>
+				<img src="images/hotli02_1.jpg" width="186" height="144" />                 
+                许昌市蓝泰实业有限公司 
+            </li>
+            <li class="hotlifix">
+				<img src="images/hotli02_1.jpg" width="186" height="144" />                 
+                许昌市蓝泰实业有限公司 
+            </li>
+    </ul>
+    </div>
+    <div class="morelink">
+    	<img src="images/morelink_1.jpg" width="1001" height="135" border="0" usemap="#Map" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="300,22,472,120" href="#" />
+          <area shape="rect" coords="532,24,771,118" href="#" />
+        </map>
+    </div>
+</div>
+<div class="foot">
+	<p class="copyright">版权所有:copyright:聚农创新科技发展有限公司 1998-2012 Allyfarm Creative TechnologyDevelopment Co.,ltd. </p>
+	<p>集团总部：中国 辽宁省 沈阳市大东区大东路134号 电话:024-24329255 024-31938750 传真:024-24329155 辽ICP备12015135号</p>
+</div>
+</body>
+</html>
