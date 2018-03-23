@@ -1,9 +1,0 @@
-@charset "gb2312";
-/* CSS Document */
-.img_list{height:2047px;width:700px;padding:0 7px;margin:30px 0 0 0;}
-.hangye_img_list{height:650px;}
-.guimo{height:851px;}
-.img_list ul{list-style:none;clear:both;}
-.img_list ul li{width:330px ;height:296px   ;float:left;overflow:hidden;}
-.img_list ul li p{text-align:center;font-size:14px;line-height:33px;color:#7E7E7E;}
-.img_list ul li.fixli{margin:0 40px 0 0;}
