@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>户型信息</title>
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" />
+<link href="css/1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var bomw = window.innerWidth  ;
+		var xz = $(".xz_title ul li").length;
+		var xznum=0;
+		$(".xz_title ul").attr("id","1");
+		$(".xz_title ul li").width($(".xz_title").width());
+		$(".xz_title ul li").height($(".xz_title").height()-4);
+		$(".xz_title ul").height($(".xz_title").height());
+		$(".xz_title ul").width($(".xz_title ul li").width()*$(".xz_title ul li").length);
+		$(".sm_list").width($(".info").width());
+		var sm = $(".sm_list").width();
+		$(".shuoming").width(sm*$(".sm_list").length);
+		var listw = $(".louceng .list").width($(".yin").width());
+		var lcl = $(".lc_list").width(($(".louceng .list").width()*$(".louceng .list").length)+800);
+		var lc = ($(".louceng .list").width())+($(".lc_list").width()*0.01*2);
+		var hx = $("li.hx").width();
+		var yb = $("li.yb").width()+2;
+		$("li.hw").width(bomw-hx-yb-1);
+		$(".lc_list .list").eq(0).css({"visibility":"visible"}).siblings().css({"visibility":"hidden"});
+		$(".next").click(function(){
+			$(".button ul li").css({"background":"url(img/huxing_kuang02.png) repeat-x 0 0"}).siblings().css({"background":"url(img/huxing_kuang01.png) repeat-x 0 0"});
+			var a = xznum;
+			a = xznum<xz-1?(xznum+1):2;
+			var t = a*($(".xz_title ul li").width());
+			$(".xz_title ul").animate({"left":-t});
+			var d = $(".xz_title ul li").eq(a).attr("id");
+			$(".xz_title ul").attr("id",d);
+			$(".shuoming").animate({"left":-(a*sm)});
+			$(".louceng .lc_list").animate({"left":-(a*lc)});
+			$(".lc_list .list").eq(a).css({"visibility":"visible"}).siblings().css({"visibility":"hidden"});
+			xznum = a;
+			return xznum;
+			
+		});
+		$(".prev").click(function(){
+			$(".button ul li").css({"background":"url(img/huxing_kuang02.png) repeat-x 0 0"}).siblings().css({"background":"url(img/huxing_kuang01.png) repeat-x 0 0"});
+			var a = xznum;
+			a = xznum<xz?(xznum-1):0;
+			if(a<0){a=0}
+			var t = a*($(".xz_title ul li").width());
+			$(".xz_title ul").animate({"left":-t});
+			var d = $(".xz_title ul li").eq(a).attr("id");
+			$(".xz_title ul").attr("id",d);
+			$(".shuoming").animate({"left":-(a*sm)});
+			$(".louceng .lc_list").animate({"left":-(a*lc)});
+			$(".lc_list .list").eq(a).css({"visibility":"visible"}).siblings().css({"visibility":"hidden"});
+			xznum = a;
+			return xznum;
+		});
+		//var yb = $(".xz_title ul").attr("id");
+//		if(yb==1){
+//			var imgUrlLeft= "/BaseData/Style/Mobifreaks/img/left.jpg";
+//			var imgUrlBefore = "/BaseData/Style/Mobifreaks/img/before.jpg";
+//			var imgUrlRight = "/BaseData/Style/Mobifreaks/img/right.jpg";
+//			var imgUrlBack = "/BaseData/Style/Mobifreaks/img/back.jpg";
+//			var imgUrlUp = "/BaseData/Style/Mobifreaks/img/up.jpg";
+//			var imgUrlDown = "/BaseData/Style/Mobifreaks/img/down.jpg";
+//			var exports = this;
+//			jQuery(function(){
+//			var App = require("index");
+//			exports.app = new App({el: $("#showimg")});
+//			});
+//			$("#sensor3D").click(closeSensor3D);
+//		}else if(yb==2){
+//			var imgUrlLeft= "/BaseData/Style/Mobifreaks/img/left.jpg";
+//			var imgUrlBefore = "/BaseData/Style/Mobifreaks/img/before.jpg";
+//			var imgUrlRight = "/BaseData/Style/Mobifreaks/img/right.jpg";
+//			var imgUrlBack = "/BaseData/Style/Mobifreaks/img/back.jpg";
+//			var imgUrlUp = "/BaseData/Style/Mobifreaks/img/up.jpg";
+//			var imgUrlDown = "/BaseData/Style/Mobifreaks/img/down.jpg";
+//			var exports = this;
+//			jQuery(function(){
+//			var App = require("index");
+//			exports.app = new App({el: $("#showimg")});
+//			});
+//			$("#sensor3D").click(closeSensor3D);
+//			
+//		}else if(yb==3){
+//			var imgUrlLeft= "/BaseData/Style/Mobifreaks/img/left.jpg";
+//			var imgUrlBefore = "/BaseData/Style/Mobifreaks/img/before.jpg";
+//			var imgUrlRight = "/BaseData/Style/Mobifreaks/img/right.jpg";
+//			var imgUrlBack = "/BaseData/Style/Mobifreaks/img/back.jpg";
+//			var imgUrlUp = "/BaseData/Style/Mobifreaks/img/up.jpg";
+//			var imgUrlDown = "/BaseData/Style/Mobifreaks/img/down.jpg";
+//			var exports = this;
+//			jQuery(function(){
+//			var App = require("index");
+//			exports.app = new App({el: $("#showimg")});
+//			});
+//			$("#sensor3D").click(closeSensor3D);
+//		}
+	})
+</script>
+<script src="js/touch_slide.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="black"></div>
+	<div class="imgbox">
+		<div class="btn">
+			<ul class="num">
+			</ul>
+		</div>
+		<div class="imginfo"></div>
+		<ul id="showimg">
+		</ul>
+	</div>
+	<div class="bg"><img src="img/huxing_bg.png" width="100%" height="100%" /></div>
+	<div class="box">
+		<div class="button">
+			<ul>
+				<li class="hx"><a href="###">户型图</a></li>
+				<li class="yb"><a href="###">样板间</a></li>
+				<li class="hw"><a href="###">户外实景</a></li>
+			</ul>
+		</div>
+		<div class="xz">
+			<div class="prev"></div>
+			<div class="xz_title">
+				<ul>
+					<li id="1"><img src="img/huxing_tu.png" width="100%" height="100%" /></li>
+					<li id="2"><img src="img/huxing_tu189.png" width="100%" height="100%" /></li>
+					<li id="3"><img src="img/huxing_tu110.png" width="100%" height="100%" /></li>
+				</ul>
+			</div>
+			<div class="next"></div>
+			<div class="line"><img src="img/huxing_fengexian.png" width="100%" height="100%" /></div>
+		</div>
+		<div class="info">
+			<div class="shuoming">
+				<div class="sm_list">
+					<p>户型紧凑巧妙，通透明亮</p>
+					<p>主次卧空间宽敞有序，大小得当，实用舒适</p>
+					<p>阳光厨房，功能完备，美味怡然享用</p>
+					<p>宽敞的客厅，功能完备，美味怡然享用</p>
+				</div>
+				<div class="sm_list">
+					<p>户型紧凑巧妙，通透明亮</p>
+					<p>主次卧空间宽敞有序，大小得当，实用舒适</p>
+					<p>阳光厨房，功能完备，美味怡然享用</p>
+					<p>宽敞的客厅，功能完备，美味怡然享用</p>
+				</div>
+				<div class="sm_list">
+					<p>户型紧凑巧妙，通透明亮</p>
+					<p>主次卧空间宽敞有序，大小得当，实用舒适</p>
+					<p>阳光厨房，功能完备，美味怡然享用</p>
+					<p>宽敞的客厅，功能完备，美味怡然享用</p>
+				</div>
+			</div>
+			<div class="louceng">
+				<div class="yin"><img src="img/lianxi_shadow.png" width="100%" height="100%" /></div>
+				<div class="lc_list">
+					<div class="list">
+						<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr class="title">
+								<td>楼号</td>
+								<td>单元</td>
+							</tr>
+							<tr>
+								<td>8号楼</td>
+								<td>5单元</td>
+							</tr>
+							<tr>
+								<td>6号楼</td>
+								<td>4单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>3单元</td>
+							</tr>
+							<tr>
+								<td>6号楼</td>
+								<td>2单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>1单元</td>
+							</tr>
+						</table>
+					</div>
+					<div class="list">
+						<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr class="title">
+								<td>楼号</td>
+								<td>单元</td>
+							</tr>
+							<tr>
+								<td>7号楼</td>
+								<td>5单元</td>
+							</tr>
+							<tr>
+								<td>6号楼</td>
+								<td>4单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>3单元</td>
+							</tr>
+							<tr>
+								<td>6号楼</td>
+								<td>2单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>1单元</td>
+							</tr>
+						</table>
+					</div>
+					<div class="list">
+						<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr class="title">
+								<td>楼号</td>
+								<td>单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>5单元</td>
+							</tr>
+							<tr>
+								<td>6号楼</td>
+								<td>4单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>3单元</td>
+							</tr>
+							<tr>
+								<td>6号楼</td>
+								<td>2单元</td>
+							</tr>
+							<tr>
+								<td>5号楼</td>
+								<td>1单元</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

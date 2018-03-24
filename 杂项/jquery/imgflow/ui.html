@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".box").hover(
+			function() {
+  				$( ".box" ).animate({"top":"-5px"},{queue:true,duration:200},function(){$(this).css({"top":"0px"})}).animate({"top":"5px"},200,function(){$(this).css({"top":"0px"})});
+			},
+		function(){
+			  	$( ".box" ).animate({"top":"-5px"},{queue:true,duration:100},function(){$(this).css({"top":"0px"})}).animate({"top":"5px"},100,function(){$(this).css({"top":"0px"})});
+
+		})
+	})
+</script>
+<style type="text/css">
+<!--
+.wrapper{width:44px;height:44px;margin:0 auto;position:relative;}
+.box{width:40px;height:40px;background:#609;border:2px solid #FC6;position:absolute;top:0px;left:0px;}
+-->
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="box"></div>
+</div>
+</body>
+
+</html>

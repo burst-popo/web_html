@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body {font-size:12px; font-family:"微软雅黑" !important; }
+html, body, div, span, ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form, a, em, img { margin:0; padding:0; list-style:none; border:0 }
+i, em, var, h3, h2, h5 { font-style:normal; font-weight:normal; }
+a { text-decoration:none; outline:none; color:#4f3c2c; }
+a:focus { outline:none; -moz-outline:none; }
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; overflow:hidden; }
+textarea { resize:none; }
+/*初始化end*/
+.wrapper{width:100%;height:100%;overflow:hidden;}
+.star{width:480px;height:800px;overflow:hidden;margin:0 auto;position:relative;}
+.icon{width:100px;height:50px;position:absolute;z-index:100;line-height:50px;text-align:center;}
+.text01{top:10%;background:url(img/guangdian.png) no-repeat 0 0;}
+.text02{top:20%;background:url(img/guangdian.png) no-repeat 0 6px;}
+.text03{top:31%;background:url(img/guangdian.png) no-repeat 0 -6px;}
+.text04{top:29%;background:url(img/guangdian.png) no-repeat 52px -6px;}
+.text05{top:41%;background:url(img/guangdian.png) no-repeat 52px 0;}
+.text06{top:31%;background:url(img/guangdian.png) no-repeat 52px 0;}
+.icon a{color:#D6EAF5;font-size:12px;}
+.bg{width:480px;height:800px;background:#000;z-index:200;position:absolute;top:0px;left:0px;}
+.info{width:50px;height:50px;position:absolute;z-index:400;overflow:hidden;border:1px solid;border-radius:25px;}
+iframe{width:480px;height:800px;}
+.bgshow{position:absolute;z-index:50;}
+-->
+</style>
+<script src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var bomw = window.innerWidth  ;
+		var bomh = window.innerHeight ;
+		var a001 = bomw*0.2375-28;
+		var a002 = bomw*0.6417-28;
+		var a003 = bomw*0.7708-28;
+		var a004 = bomw*0.275-79;
+		var a005 = bomw*0.2708-77;
+		var a006 = bomw*0.4563-77;
+		var star = $(".icon");
+		var i;
+		var a = $(".icon a");
+		var iframbox = $(".info");
+		var ifram = $(".info iframe");
+		star.hide();
+		iframbox.hide();
+		$(".text01").css({"left":a001});
+		$(".text02").css({"left":a002});
+		$(".text03").css({"left":a003});
+		$(".text04").css({"left":a004});
+		$(".text05").css({"left":a005});
+		$(".text06").css({"left":a006});
+		$(".star").css({"width":bomw,"height":bomh});
+		$(".bgshow").css({"width":bomw,"height":bomh});
+		$(".bgshow img").css({"width":bomw,"height":bomh});
+		star.each(function() {
+			var i = $(this).index();
+			if($(this).is(":hidden")){
+				var time = 1000*i+800;
+				$(this).fadeIn(time,function(){setInterval(auto,1500); });
+			}
+		});
+		function auto(){
+			star.animate({"opacity":"0.5"},500).animate({"opacity":"1"},500);	
+			
+		}
+		
+		a.click(function(){
+			var div = $("<div class='bg'></div>");
+			var alink = $(this).attr("id");
+			var itop = $(this).parent().css("top");
+			var ileft = $(this).parent().css("left");
+			div.insertAfter($(this).parent());
+			div.css({"opacity":"0.65"});
+			$(this).parent().css({"z-index":"300"});
+			iframbox.css({"top":itop,"left":ileft});
+			ifram.attr("src",alink);
+			iframbox.show().animate({"width":"480px","height":"800px","top":"0px","left":"0px"},1800,function(){$(this).css({"border":"none","border-radius":"0px"})});
+		})
+		
+	})
+</script>
+</head>
+
+<body>
+	<div class="star">
+		<div class="bgshow"><img src="img/gn_bg.png"></div>
+		<div class="info"><iframe src='###' frameborder='0'></iframe></div>
+		<div class="icon text01"><a href="###" id="index.html">走进ACT</a></div>
+		<div class="icon text02"><a href="###" id="http://qq.com">完美生活</a></div>
+		<div class="icon text03"><a href="###" id="index.html">会员服务</a></div>
+		<div class="icon text04"><a href="###" id="index.html">一键互动</a></div>
+		<div class="icon text05"><a href="###" id="index.html">中航岁月</a></div>
+		<div class="icon text06"><a href="###" id="index.html">商务领航</a></div>
+	</div>
+</body>
+</html>

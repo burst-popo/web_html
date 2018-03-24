@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$("p.menus").toggle(function(event){
+		$(this).css({"background-color":"#00ff00"}).next("div.menuitems").slideDown(500).siblings("div.menuitems").slideUp("slow");
+		$(this).siblings("p.menus").css("background-color","#0ff");
+		$("ul.menuitems_item_list").slideUp("slow").parent().siblings().find(".menuitems_item_list").slideUp("slow");
+	},function(){
+		$(this).css({"background-color":"#0ff"}).next("div.menuitems").slideUp("slow");
+	})
+        $("a.menuitems_item").toggle(function(event){
+		$(this).next("ul.menuitems_item_list").slideDown(500).parent().siblings().find(".menuitems_item_list").slideUp("slow");
+	},function(){
+		$(this).next("ul.menuitems_item_list",this).slideUp("slow");
+	})
+	
+})
+</script>
+<style type="text/css">
+<!--
+ul,li{margin:0;padding:0;list-style:none;}
+.menus{width:200px;padding:5px;margin:1px;font-weight:bold;background:#0ff;}
+.menuitems{display:none;}
+a{display:block;border-bottom:1px solid #fff;text-decoration:none;color:#fff;background:#00f;padding:10px;font-weight:bold;width:190px;}
+.menuitems a:hover{background:#000;}
+ul{margin:0 0 0 15px;}
+li{display:inline;}
+/*ul{display:inline;}*/
+ul.menuitems_item_list{display:none;margin:0 0 0 25px;}
+-->
+</style>
+</head>
+<body>
+<p class="menus">Books</p>
+<div class="menuitems">
+	<ul>
+      <li>
+      	<a href="###" class="menuitems_item">isaac photo</a>
+      	<ul class="menuitems_item_list">
+        	<li><a href="###">我是三级菜单</a></li>
+        </ul>
+      </li> 	
+      <li>
+      	<a href="###" class="menuitems_item">10-6.html</a>
+      	<ul class="menuitems_item_list">
+        	<li><a href="###">我是三级菜单</a></li>
+        </ul>
+      </li>
+      <li><a href="###">10-7.html</a></li>
+      <li><a href="###">10-8.html</a></li>
+      <li><a href="###">10-9.html</a></li>
+      <li><a href="###">isaac</a></li>        
+	</ul>
+</div>
+<p class="menus">Movies</p>
+<div class="menuitems">
+	<ul>
+      <li><a href="###" class="menuitems_item">isaac photo</a>
+      	<ul class="menuitems_item_list">
+        	<li><a href="###">我是三级菜单</a></li>
+        </ul>
+      </li> 	
+      <li><a href="###">10-6.html</a></li>
+      <li><a href="###">10-7.html</a></li>
+      <li><a href="###">10-8.html</a></li>
+      <li><a href="###">10-9.html</a></li>
+      <li><a href="###">isaac</a></li>        
+	</ul>
+</div>
+
+</body>
+</html>

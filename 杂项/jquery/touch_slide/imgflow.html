@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+.wrapper_box{width:100%;height:100%;}
+.wrapper{width:212px;height:300px;background:#000;position:relative;float:left;}
+.box{width:212px;height:212px;overflow:hidden;background:#000;position:relative;}
+.box div{width:212px;height:212px;position:absolute;top:0px;left:0px;}
+.btn{width:auto;}
+.next{color:#fff;font-size:12px;cursor:pointer;float:right;}
+.prev{color:#fff;font-size:12px;cursor:pointer;float:left;}
+#a01{}
+#a02{}
+#a03{}
+#a04{}
+.test{float:left;width:100px;height:100px;background:#ff0000;}
+-->
+</style>
+<script src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var t = 0;
+		var left = $(".box div").width();
+		$(".box div").each(function(index) {
+			$(this).css({"left":left}).hide();
+		});
+		$(".box div").eq(0).css({"left":"0px"}).show();
+		$(".next").click(function(){
+			var l = $(".box div").length;
+			var num = t;
+			var num = num<l-1?num+1:0;
+			if(num==$(".box div").first().index()){
+				$(".box div").eq(num).show().animate({"left":"0px"}).siblings().last().animate(
+						{"left":-left},
+						function(){$(this).css({"left":left,"display":"none"})}
+						)
+				};
+			$(".box div").eq(num).show().animate({"left":"0px"}).prev().animate({"left":-left},function(){$(this).css({"left":left,"display":"none"})});
+			t=num
+			return t;
+		});
+		$(".prev").click(function(){
+			var l = $(".box div").length;
+			var num = t;
+			if(num==0){
+				$(".box div").eq(num).animate({"left":left},function(){$(this).css({"left":left,"display":"none"})}).siblings().last().css({"left":-left}).show().animate({"left":"0px"});
+				num=3;
+				t=num;
+				return t;
+				}
+			num = num<l?num-1:0;
+				$(".box div").eq(num).css({"left":-left}).show().animate({"left":"0px"}).next().animate({"left":left},function(){$(this).css({"left":left,"display":"none"})});
+				t=num
+				return t;
+			
+		});
+	})
+</script>
+</head>
+
+<body>
+<div class="wrapper_box">
+	<div class="wrapper">
+		<div class="box">
+			<div id="a01"><img src="img/4.jpg" width="212" height="212" /></div>
+			<div id="a02"><img src="img/5.jpg" width="212" height="212" /></div>
+			<div id="a03"><img src="img/6.jpg" width="212" height="212" /></div>
+			<div id="a04"><img src="img/7.jpg" width="212" height="212" /></div>
+		</div>
+		<div class="btn">
+			<div class="next">next</div>
+			<div class="prev">prev</div>
+		</div>
+	</div>
+	<div class="test"></div>
+</div>
+</body>
+</html>

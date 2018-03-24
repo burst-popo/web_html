@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body { font-size:12px; font-family:"微软雅黑" !important; }
+html, body, div, span, ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form, a, em, img { margin:0; padding:0; list-style:none; border:0 }
+i, em, var, h3, h2, h5 { font-style:normal; font-weight:normal; }
+a { text-decoration:none; outline:none; color:#4f3c2c; }
+a:focus { outline:none; -moz-outline:none; }
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; overflow:hidden; }
+textarea { resize:none; }
+/*初始化end*/
+body{}
+.wrapper { position:relative;min-width:488px;min-height:700px;}
+.bg { position:absolute; top:0px; left:0px;min-width:800px;min-height:1000px; }
+.bg img{min-width:800px;min-height:1000px;}
+/*.infobox { width:362px; height:488px;margin:100px auto 0 auto; }
+.ib_wrapper { width:362px; height:488px; }
+.ib_box { width:362px; height:488px; position:relative; }*/
+.infobox { width:100%; height:100%;margin:100px auto 0 auto; }
+.ib_wrapper { width:100%; height:100%; }
+.ib_box { width:100%; height:100%; position:relative; }
+div.item { position:absolute;  z-index:100; text-align:center; overflow:hidden; }
+div.d01 { top:26%; left:14%; background:url(../img/tubiao2_1-2.png) no-repeat 0 0; width:50px; height:39px; }
+div.d02 { top:55%; left:9%; background:url(../img/tubiao2_2-2.png) no-repeat 0 0; width:36px; height:43px; text-align:left; text-indent:6em; }
+div.d03 { top:84%; left:42%; background:url(../img/tubiao2_3-2.png) no-repeat 0 0; width:106px; height:127px; text-indent:1em; }
+div.d04 { top:70%; left:87%; background:url(../img/tubiao2_4-2.png) no-repeat 0 0; width:31px; height:25px; text-indent:4em; }
+div.d05 { top:21%; left:85%; background:url(../img/tubiao2_5-2.png) no-repeat 0 0; width:60px; height:57px; text-indent:5em; }
+div.show { z-index:500; }
+div.item a { color:#F9FFFF; font-size:27px; }
+.itembox {position:absolute;overflow:hidden;}
+/*.in01 { top:0px; left:0px;width:145px;height:143px; }*/
+/*.in02 { left: 76px; top: 107px; z-index:1;width:154px;height:145px; }
+.in03 { left: -14px; top: 196px; z-index:2;width:167px;height:173px; }
+.in04 { left: 48px; top: 325px; z-index:3;width:156px;height:160px; }
+.in05 { left: 176px; top: 183px;width:182px;height:161px; }*/
+.in01 { top:0%; left:0%;width:40%;height:27%; }
+.in02 { left: 21%; top: 22%; z-index:1;width:42%;height:29%; }
+.in03 { left: 0%; top: 40%; z-index:2;width:46%;height:35%; }
+.in04 { left: 14%; top: 66%; z-index:3;width:43%;height:32%; }
+.in05 { left: 48%; top: 37%;width:50%;height:33%; }

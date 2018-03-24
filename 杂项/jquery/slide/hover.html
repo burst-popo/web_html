@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("ul li").hover(
+		function(){
+			$(this).find(".hover_text").animate(
+				{top:0},500
+			);
+			$(this).find(".hover").animate(
+				{top:0},500
+			);
+		},
+		function(){
+			$(this).find(".hover_text").animate(
+				{top:101},500
+			);
+			$(this).find(".hover").animate(
+				{top:101},500
+			);
+			
+		}
+	);
+})
+</script>
+<style type="text/css">
+<!--
+*{margin:0;padding:0;}
+ul{list-style:none;clear:both;}
+ul li{position:relative;width:150px  ;height: 100px  ;float:left;overflow:hidden;}
+.hover_text{width:150px;height:100px;position:absolute;top:101px;left:0;z-index:10;}
+.hover_text p{width:150px;height:25px;line-height:25px;font-size:13px;text-align:center;color:#EBF3CA;}
+.hover_text p.name{overflow:hidden;}
+.hover_text p.price{overflow:hidden;}
+.hover_text p.icon{width:150px;height:50px;}
+.hover_text p.icon a{text-decoration:none;color:#EBF3CA;}
+.hover{ width:150px; height:100px; position:absolute; top:101px; background:#A7C144; filter: Alpha(Opacity=60);opacity:0.6;z-index:5;}
+-->
+</style>
+</head>
+<body>
+<ul>
+	<li>
+		<div class="hover_text">
+				<P class="name">商品名称</P>
+				<p class="price">商品价格</p>
+				<p class="icon"><a href="###">查看详情</a></p>
+			</div>
+		<div class="hover">
+		</div>
+		<img src="img/y_product/y007.jpg" width="150" height="100" />
+	</li>
+	<li>
+		<div class="hover_text">
+				<P class="name">商品名称</P>
+				<p class="price">商品价格</p>
+				<p class="icon"><a href="###">查看详情</a></p>
+			</div>
+		<div class="hover"></div>
+		<img src="img/y_product/y006.jpg" width="150" height="100" />
+	</li>
+
+</ul>
+</body>
+</html>

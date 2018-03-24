@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+body {font-size:12px; font-family:"微软雅黑" !important; }
+html, body, div, span, ul, li, ol, dl, dd, dt, form, h1, h2, h3, h4, h5, h6, p, form, a, em, img { margin:0; padding:0; list-style:none; border:0 }
+i, em, var, h3, h2, h5 { font-style:normal; font-weight:normal; }
+a { text-decoration:none; outline:none; color:#4f3c2c; }
+a:focus { outline:none; -moz-outline:none; }
+a img { border:0; }
+table { table-layout:fixed; }
+.clear { clear:both; overflow:hidden; }
+textarea { resize:none; }
+/*初始化end*/
+.wrapper{position:relative;}
+.bg{width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:0;}
+.box{width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:1;}
+.button{width:100%;height:50px;}
+.button ul{width:100%;height:50px;clear:both;}
+.button ul li{float:left;width:auto;height:50px;line-height:4em;text-align:center;background:url(../img/huxing_kuang01.png) repeat-x 0 0;}
+.button ul li a{font-size:16px;color:#F2FDFF !important;}
+.button ul li.hx{width:33%;}
+.button ul li.yb{width:34%;border-right:1px solid #B1D4E8;border-left:1px solid #B1D4E8;}
+.button ul li.hw{width:32%;}
+.xz{width:100%;height:22%;position:relative;}
+.prev{width:21px;height:53px;background:#000000;color:#fff;position:absolute;top:10%;left:14%;background:url(../img/huxing_jiantouzuo.png) no-repeat 0 0;}
+.next{width:21px;height:53px;background:#000000;color:#fff;position:absolute;top:10%;left:83%;background:url(../img/huxing_jiantouyou.png) no-repeat 0 0;}
+.xz_title{width:32%;height:77%;margin:0 auto;font-size:14px;color:#FBFFFF;text-align:left;overflow:hidden;position:relative;}
+.xz_title ul{clear:both;width:100%;height:100%;position:absolute;top:3%;left:0px;}
+.xz_title ul li{float:left;width:100%;height:100%;color:#000;}
+.line{width:100%;height:5%;margin:11px 0 0 0;}
+.info{width:100%;height:69%;position:relative;}
+.shuoming{width:100%;height:28%;text-align:center;overflow:hidden;position:absolute;top:0px;left:0px;}
+.shuoming .sm_list{width:100%;height:100%;float:left;}
+.shuoming p{width:auto;height:auto;color:#313131;letter-spacing: 4px;}
+.louceng{width:100%;height:72%;position:relative;top:28%;overflow:hidden;}
+.yin{width:92%;height:5%;position:absolute;top:95%;left:4%;}
+.lc_list{width:100%;height:93%;position:absolute;top:0px;left:0px;}
+.louceng .list{width:100%;height:100%;float:left;padding:0 1%;}
+.list table{border:1px solid #536569;}
+.list table tr{text-align:center;font-size:13px;color:#424242;}
+.list table tr.title{height:49px;background:url(../img/huxing_kuang01.png) repeat-x 0 0;line-height:49px;font-size:16px;color:#EDFFFF;}
+.black{width:100%;height:100%;background:#000;position:absolute;top:0px;left:0px; opacity:0.5;z-index:10}
+
+.imgbox{width:212px;height:50%;overflow:hidden;position:relative;top:19%;left:0%;}
+.imgbox ul{overflow:hidden;height:100%;position:absolute;top:0px;left:0px;z-index:100}
+.imgbox ul li{overflow:hidden;height:100%;float:left;}
+.btn{height:5%;position:absolute;top:95%;z-index:200;}
+.btn ul{clear:both;width:20%;height:100%;position:static;margin:0 auto; overflow:visible;}
+.btn ul li{float:left;width:10%;height:100%;background:url(../img/point01.png) no-repeat 0 0;margin:0 1px;cursor:pointer;}
+.imginfo{height:24%;position:absolute;background:#000;opacity:0.5;z-index:150;top:76%;color:#fff;}
+ul#showimg li img{width:100%;height:100%;}
