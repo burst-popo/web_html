@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>transition练习</title>
+		<style type="text/css">
+			.wrapper{width:150px;height:35px;position:relative;border:2px solid #ff9500;cursor:pointer;overflow: hidden;}
+			.wrapper-bottom:before{content:"";display:block;width:100px;height:35px;background: #FF9500;position:absolute;bottom:0;transition: all 1s;}
+			.wrapper-bottom:hover:before{height: 5px;}
+			.wrapper-top:before{content:"";display:block;width:100px;height:35px;background: #FF9500;position:absolute;top:0;transition: all 1s;}
+			.wrapper-top:hover:before{height: 5px;}
+			.wrapper-left:before{content:"";display:block;width:100px;height:35px;background: #FF9500;position:absolute;left:0;transition: all 1s;}
+			.wrapper-left:hover:before{width: 10px;}
+			.wrapper-right:before{content:"";display:block;width:100px;height:35px;background: #FF9500;position:absolute;right:0;transition: all 1s;}
+			.wrapper-right:hover:before{width: 10px;}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper wrapper-bottom">混分巨兽倒海翻江撒谎发货单复健科</div>
+		<hr />
+		<div class="wrapper wrapper-top">混分巨兽倒海翻江撒谎发货单复健科</div>
+		<hr />
+		<div class="wrapper wrapper-left">混分巨兽倒海翻江撒谎发货单复健科</div>
+		<hr />
+		<div class="wrapper wrapper-right">混分巨兽倒海翻江撒谎发货单复健科</div>
+	</body>
+</html>
