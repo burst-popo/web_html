@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 	<head>
 		<meta charset="utf-8">
 		<title>transition练习</title>
 		<style type="text/css">
+			body{font-family: "微软雅黑";font-size: small;}
 			.wrapper{width:150px;height:35px;position:relative;border:2px solid #ff9500;cursor:pointer;overflow: hidden;}
 			.wrapper-bottom:before{content:"";display:block;width:100px;height:35px;background: #FF9500;position:absolute;bottom:0;transition: all 1s;}
 			.wrapper-bottom:hover:before{height: 5px;}
@@ -13,7 +14,22 @@
 			.wrapper-left:hover:before{width: 10px;}
 			.wrapper-right:before{content:"";display:block;width:100px;height:35px;background: #FF9500;position:absolute;right:0;transition: all 1s;}
 			.wrapper-right:hover:before{width: 10px;}
+			.wrapper-transform{transform: rotate(0deg);-webkit-transform: rotate(0deg);}
+			.wrapper-transform:hover{transform: rotate(-360deg);-webkit-transform: rotate(-360deg);-ms-transform: rotate(-360deg);transition:transform 1s;}
+			.main-icon{width:50px;height:50px;border:1px solid transparent;border-radius:25px;margin:100px auto 0 auto;position:relative;}
+			.main-icon-item{width:50px;height:50px;border:1px solid #ff9500;border-radius:25px;position: absolute;z-index:1;}
+			.item-main{top:0;left:0;background:#ffffff;z-index: 2;}
+			.top-right{top:0;left:0;background:#28544B ;}
+			.top-right-show{transition:transform 1s;transform:translate(40px,-38px);-webkit-transform: translate(40px,-38px);-ms-transform:translate(40px,-38px) ;}
+			.top-left{top:0;left:0;background:#ACBD86 ;}
+			.top-left-show{transition:transform 1s;transform:translate(140px,-38px);-webkit-transform: translate(-43px,-38px);-ms-transform:translate(-43px,-38px) ;}
+			.bottom-right{top:0;left:0;background:#FFD6A0 ;}
+			.bottom-right-show{transition:transform 1s;transform:translate(-43px,38px);-webkit-transform: translate(-43px,38px);-ms-transform:translate(-43px,38px);}
+			.bottom-left{top:0;left:0;background:#FFA06F ;}
+			.bottom-left-show{transition:transform 1s;transform:translate(42px,38px);-webkit-transform: translate(42px,38px);-ms-transform:translate(42px,38px);}
+			.top-right-hide,.top-left-hide,.bottom-right-hide,.bottom-left-hide{transition:transform 1s;transform:translate(0px,0px);-webkit-transform: translate(0px,0px);-ms-transform:translate(0px,0px);}
 		</style>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper wrapper-bottom">混分巨兽倒海翻江撒谎发货单复健科</div>
@@ -23,5 +39,35 @@
 		<div class="wrapper wrapper-left">混分巨兽倒海翻江撒谎发货单复健科</div>
 		<hr />
 		<div class="wrapper wrapper-right">混分巨兽倒海翻江撒谎发货单复健科</div>
+		<hr />
+		<div class="wrapper wrapper-transform">混分巨兽倒海翻江撒谎发货单复健科</div>
+		<hr />
+		<div class="main-icon">
+			<div class="main-icon-item item-main"></div>
+			<div class="main-icon-item top-right top-right-hide"></div>
+			<div class="main-icon-item top-left top-left-hide"></div>
+			<div class="main-icon-item bottom-right bottom-right-hide"></div>
+			<div class="main-icon-item bottom-left bottom-left-hide"></div>
+		</div>
 	</body>
+	<script type="text/javascript">
+		$(function(){
+				$(".item-main").on("click",function(){
+					var t =$(".item-main");
+					if(t.hasClass("open")){
+					$(this).removeClass("open");
+				$(".top-right").removeClass("top-right-show").addClass("top-right-hide");
+				$(".top-left").removeClass("top-left-show").addClass("top-left-hide");
+				$(".bottom-right").removeClass("bottom-right-show").addClass("bottom-right-hide");
+				$(".bottom-left").removeClass("bottom-left-show").addClass("bottom-left-hide");						
+					}else {
+					$(this).addClass("open");
+				$(".top-right").removeClass("top-right-hide").addClass("top-right-show");
+				$(".top-left").removeClass("top-left-hide").addClass("top-left-show");
+				$(".bottom-right").removeClass("bottom-right-hide").addClass("bottom-right-show");
+				$(".bottom-left").removeClass("bottom-left-hide").addClass("bottom-left-show");				
+					}				
+			});
+		})
+	</script>
 </html>
