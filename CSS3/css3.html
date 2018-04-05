@@ -28,6 +28,17 @@
 			.bottom-left{top:0;left:0;background:#FFA06F ;}
 			.bottom-left-show{transition:transform 1s;transform:translate(42px,38px);-webkit-transform: translate(42px,38px);-ms-transform:translate(42px,38px);}
 			.top-right-hide,.top-left-hide,.bottom-right-hide,.bottom-left-hide{transition:transform 1s;transform:translate(0px,0px);-webkit-transform: translate(0px,0px);-ms-transform:translate(0px,0px);}
+			.box-wrapper{width:300px;height:200px;background:#000000;border:1px solid transparent;}
+			.box{width:148px;height:48px;position:relative;color:#d5d5d5;box-shadow:inset 0 0 0 1px #cccccc;text-align:center;line-height:50px;letter-spacing:1em;background:transparent;transition:background 0.5s;left:0;top:0;margin:50px auto 0 auto;}
+			.box:hover{background:#ffffff;}
+			.box:before{content:"";width:100%;height:2px;position:absolute;top:0;left:0;background:#ff9500;transform:scaleX(0);transform-origin: 0 0;transition:transform 0.5s;}
+			.box:hover:before{transform:scaleX(1);transition:transform 0.5s;}
+			.box:after{content:"";width:2px;height:100%;position:absolute;top:0;left:0;background:#ff9500;transform:scaleY(0);transform-origin: 0 0;transition:transform 0.5s;}
+			.box:hover:after{transform:scaleY(1);transition:transform 0.5s;}
+			.box span:before{content:"";width:100%;height:2px;position:absolute;bottom:0;left:0;background:#ff9500;transform:scaleX(0);transform-origin: 100% 0;transition:transform 0.5s;}
+			.box:hover span:before{transform:scaleX(1);transition:transform 0.5s;}
+			.box span:after{content:"";width:2px;height:100%;position:absolute;bottom:0;right:0;background:#ff9500;transform:scaleY(0);transform-origin:0 100%;transition:transform 0.5s;}
+			.box:hover span:after{transform:scaleY(1);transition:transform 0.5s;}
 		</style>
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	</head>
@@ -49,6 +60,10 @@
 			<div class="main-icon-item bottom-right bottom-right-hide"></div>
 			<div class="main-icon-item bottom-left bottom-left-hide"></div>
 		</div>
+		<div class="box-wrapper">
+			<div class="box">边框特效<span></span></div>
+		</div>
+		
 	</body>
 	<script type="text/javascript">
 		$(function(){
